@@ -1,0 +1,2424 @@
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+Loading required package: afex
+Loading required package: car
+Loading required package: lme4
+Loading required package: Matrix
+Loading required package: reshape2
+************
+Welcome to afex. Important notes:
+
+Due to popular demand, afex doesn't change the contrasts globally anymore.
+To set contrasts globally to contr.sum run set_sum_contrasts().
+To set contrasts globally to the default (treatment) contrasts run set_default_contrasts().
+
+All afex functions are unaffected by global contrasts and use contr.sum as long as check.contr = TRUE (which is the default).
+************
+Package afex loaded successfully!
+
+Loading required package: phia
+Package phia loaded successfully!
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+***** Summary information of data structure *****
+18 subjects :  001 002 004 005 006 007 008 009 010 011 012 013 014 015 016 017 018 019 
+36 response values
+2 levels for factor Group : G1 G2 
+2 levels for factor Visit : V1 V2 
+2 levels for factor SideOp : L R 
+4 post hoc tests
+
+Contingency tables of subject distributions among the categorical variables:
+
+, , Visit = V1
+
+     SideOp
+Group L R
+   G1 6 5
+   G2 2 5
+
+, , Visit = V2
+
+     SideOp
+Group L R
+   G1 6 5
+   G2 2 5
+
+
+Tabulation of subjects against each of the categorical variables:
+~~~~~~~~~~~~~~
+lop$nSubj vs Group:
+     
+      G1 G2
+  001  2  0
+  002  0  2
+  004  2  0
+  005  0  2
+  006  2  0
+  007  0  2
+  008  0  2
+  009  2  0
+  010  2  0
+  011  2  0
+  012  0  2
+  013  2  0
+  014  2  0
+  015  0  2
+  016  2  0
+  017  0  2
+  018  2  0
+  019  2  0
+
+~~~~~~~~~~~~~~
+lop$nSubj vs Visit:
+     
+      V1 V2
+  001  1  1
+  002  1  1
+  004  1  1
+  005  1  1
+  006  1  1
+  007  1  1
+  008  1  1
+  009  1  1
+  010  1  1
+  011  1  1
+  012  1  1
+  013  1  1
+  014  1  1
+  015  1  1
+  016  1  1
+  017  1  1
+  018  1  1
+  019  1  1
+
+~~~~~~~~~~~~~~
+lop$nSubj vs SideOp:
+     
+      L R
+  001 0 2
+  002 0 2
+  004 2 0
+  005 2 0
+  006 2 0
+  007 2 0
+  008 0 2
+  009 0 2
+  010 0 2
+  011 0 2
+  012 0 2
+  013 2 0
+  014 0 2
+  015 0 2
+  016 2 0
+  017 0 2
+  018 2 0
+  019 2 0
+
+***** End of data structure information *****
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Reading input files now...
+
+Reading input files: Done!
+
+If the program hangs here for more than, for example, half an hour,
+kill the process because the model specification or the GLT coding
+is likely inappropriate.
+
+[1] "Great, test run passed at voxel (16, 31, 25)!"
+[1] "Start to compute 51 slices along Z axis. You can monitor the progress"
+[1] "and estimate the total run time as shown below."
+[1] "07/15/15 20:01:26.698"
+Loading required package: snow
+Package snow loaded successfully!
+
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+Z slice  1 done:  07/15/15 20:01:33.471 
+Z slice  2 done:  07/15/15 20:01:33.902 
+Z slice  3 done:  07/15/15 20:01:33.991 
+Z slice  4 done:  07/15/15 20:01:34.101 
+Z slice  5 done:  07/15/15 20:01:34.208 
+Z slice  6 done:  07/15/15 20:01:36.405 
+Z slice  7 done:  07/15/15 20:01:53.760 
+Z slice  8 done:  07/15/15 20:02:22.482 
+Z slice  9 done:  07/15/15 20:03:02.085 
+Z slice  10 done:  07/15/15 20:03:51.441 
+Z slice  11 done:  07/15/15 20:04:43.104 
+Z slice  12 done:  07/15/15 20:05:37.293 
+Z slice  13 done:  07/15/15 20:06:33.195 
+Z slice  14 done:  07/15/15 20:07:34.471 
+Z slice  15 done:  07/15/15 20:08:37.927 
+Z slice  16 done:  07/15/15 20:09:42.481 
+Z slice  17 done:  07/15/15 20:10:47.578 
+Z slice  18 done:  07/15/15 20:11:52.546 
+Z slice  19 done:  07/15/15 20:13:00.147 
+Z slice  20 done:  07/15/15 20:14:06.513 
+Z slice  21 done:  07/15/15 20:15:12.223 
+Z slice  22 done:  07/15/15 20:16:18.025 
+Z slice  23 done:  07/15/15 20:17:24.148 
+Z slice  24 done:  07/15/15 20:18:29.983 
+Z slice  25 done:  07/15/15 20:19:36.527 
+Z slice  26 done:  07/15/15 20:20:43.403 
+Z slice  27 done:  07/15/15 20:21:48.078 
+Z slice  28 done:  07/15/15 20:22:53.670 
+Z slice  29 done:  07/15/15 20:23:57.458 
+Z slice  30 done:  07/15/15 20:25:00.944 
+Z slice  31 done:  07/15/15 20:26:05.612 
+Z slice  32 done:  07/15/15 20:27:10.252 
+Z slice  33 done:  07/15/15 20:28:15.091 
+Z slice  34 done:  07/15/15 20:29:21.010 
+Z slice  35 done:  07/15/15 20:30:25.796 
+Z slice  36 done:  07/15/15 20:31:32.687 
+Z slice  37 done:  07/15/15 20:32:35.900 
+Z slice  38 done:  07/15/15 20:33:37.245 
+Z slice  39 done:  07/15/15 20:34:37.817 
+Z slice  40 done:  07/15/15 20:35:36.420 
+Z slice  41 done:  07/15/15 20:36:32.763 
+Z slice  42 done:  07/15/15 20:37:26.267 
+Z slice  43 done:  07/15/15 20:38:17.424 
+Z slice  44 done:  07/15/15 20:39:05.436 
+Z slice  45 done:  07/15/15 20:39:49.769 
+Z slice  46 done:  07/15/15 20:40:30.557 
+Z slice  47 done:  07/15/15 20:41:08.014 
+Z slice  48 done:  07/15/15 20:41:39.146 
+Z slice  49 done:  07/15/15 20:42:02.458 
+Z slice  50 done:  07/15/15 20:42:11.265 
+Z slice  51 done:  07/15/15 20:42:11.362 
+
+Congratulations! You have got an output anova_AUD+tlrc.
+
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+Loading required package: afex
+Loading required package: car
+Loading required package: lme4
+Loading required package: Matrix
+Loading required package: reshape2
+************
+Welcome to afex. Important notes:
+
+Due to popular demand, afex doesn't change the contrasts globally anymore.
+To set contrasts globally to contr.sum run set_sum_contrasts().
+To set contrasts globally to the default (treatment) contrasts run set_default_contrasts().
+
+All afex functions are unaffected by global contrasts and use contr.sum as long as check.contr = TRUE (which is the default).
+************
+Package afex loaded successfully!
+
+Loading required package: phia
+Package phia loaded successfully!
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+***** Summary information of data structure *****
+18 subjects :  001 002 004 005 006 007 008 009 010 011 012 013 014 015 016 017 018 019 
+36 response values
+2 levels for factor Group : G1 G2 
+2 levels for factor Visit : V1 V2 
+2 levels for factor SideOp : L R 
+4 post hoc tests
+
+Contingency tables of subject distributions among the categorical variables:
+
+, , Visit = V1
+
+     SideOp
+Group L R
+   G1 6 5
+   G2 2 5
+
+, , Visit = V2
+
+     SideOp
+Group L R
+   G1 6 5
+   G2 2 5
+
+
+Tabulation of subjects against each of the categorical variables:
+~~~~~~~~~~~~~~
+lop$nSubj vs Group:
+     
+      G1 G2
+  001  2  0
+  002  0  2
+  004  2  0
+  005  0  2
+  006  2  0
+  007  0  2
+  008  0  2
+  009  2  0
+  010  2  0
+  011  2  0
+  012  0  2
+  013  2  0
+  014  2  0
+  015  0  2
+  016  2  0
+  017  0  2
+  018  2  0
+  019  2  0
+
+~~~~~~~~~~~~~~
+lop$nSubj vs Visit:
+     
+      V1 V2
+  001  1  1
+  002  1  1
+  004  1  1
+  005  1  1
+  006  1  1
+  007  1  1
+  008  1  1
+  009  1  1
+  010  1  1
+  011  1  1
+  012  1  1
+  013  1  1
+  014  1  1
+  015  1  1
+  016  1  1
+  017  1  1
+  018  1  1
+  019  1  1
+
+~~~~~~~~~~~~~~
+lop$nSubj vs SideOp:
+     
+      L R
+  001 0 2
+  002 0 2
+  004 2 0
+  005 2 0
+  006 2 0
+  007 2 0
+  008 0 2
+  009 0 2
+  010 0 2
+  011 0 2
+  012 0 2
+  013 2 0
+  014 0 2
+  015 0 2
+  016 2 0
+  017 0 2
+  018 2 0
+  019 2 0
+
+***** End of data structure information *****
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Reading input files now...
+
+Reading input files: Done!
+
+If the program hangs here for more than, for example, half an hour,
+kill the process because the model specification or the GLT coding
+is likely inappropriate.
+
+[1] "Great, test run passed at voxel (16, 31, 25)!"
+[1] "Start to compute 51 slices along Z axis. You can monitor the progress"
+[1] "and estimate the total run time as shown below."
+[1] "07/15/15 20:42:23.844"
+Loading required package: snow
+Package snow loaded successfully!
+
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+Z slice  1 done:  07/15/15 20:42:30.374 
+Z slice  2 done:  07/15/15 20:42:30.831 
+Z slice  3 done:  07/15/15 20:42:30.934 
+Z slice  4 done:  07/15/15 20:42:31.051 
+Z slice  5 done:  07/15/15 20:42:31.165 
+Z slice  6 done:  07/15/15 20:42:33.200 
+Z slice  7 done:  07/15/15 20:42:50.179 
+Z slice  8 done:  07/15/15 20:43:19.050 
+Z slice  9 done:  07/15/15 20:43:58.538 
+Z slice  10 done:  07/15/15 20:44:47.600 
+Z slice  11 done:  07/15/15 20:45:39.664 
+Z slice  12 done:  07/15/15 20:46:33.739 
+Z slice  13 done:  07/15/15 20:47:29.519 
+Z slice  14 done:  07/15/15 20:48:32.125 
+Z slice  15 done:  07/15/15 20:49:35.045 
+Z slice  16 done:  07/15/15 20:50:39.708 
+Z slice  17 done:  07/15/15 20:51:44.333 
+Z slice  18 done:  07/15/15 20:52:49.652 
+Z slice  19 done:  07/15/15 20:53:56.996 
+Z slice  20 done:  07/15/15 20:55:03.582 
+Z slice  21 done:  07/15/15 20:56:08.527 
+Z slice  22 done:  07/15/15 20:57:13.385 
+Z slice  23 done:  07/15/15 20:58:18.761 
+Z slice  24 done:  07/15/15 20:59:23.811 
+Z slice  25 done:  07/15/15 21:00:30.098 
+Z slice  26 done:  07/15/15 21:01:36.601 
+Z slice  27 done:  07/15/15 21:02:41.128 
+Z slice  28 done:  07/15/15 21:03:45.265 
+Z slice  29 done:  07/15/15 21:04:49.015 
+Z slice  30 done:  07/15/15 21:05:52.054 
+Z slice  31 done:  07/15/15 21:06:56.319 
+Z slice  32 done:  07/15/15 21:08:01.074 
+Z slice  33 done:  07/15/15 21:09:05.522 
+Z slice  34 done:  07/15/15 21:10:10.054 
+Z slice  35 done:  07/15/15 21:11:14.006 
+Z slice  36 done:  07/15/15 21:12:17.678 
+Z slice  37 done:  07/15/15 21:13:19.293 
+Z slice  38 done:  07/15/15 21:14:20.586 
+Z slice  39 done:  07/15/15 21:15:21.683 
+Z slice  40 done:  07/15/15 21:16:19.768 
+Z slice  41 done:  07/15/15 21:17:16.082 
+Z slice  42 done:  07/15/15 21:18:10.042 
+Z slice  43 done:  07/15/15 21:19:00.622 
+Z slice  44 done:  07/15/15 21:19:48.087 
+Z slice  45 done:  07/15/15 21:20:32.323 
+Z slice  46 done:  07/15/15 21:21:13.237 
+Z slice  47 done:  07/15/15 21:21:49.542 
+Z slice  48 done:  07/15/15 21:22:20.136 
+Z slice  49 done:  07/15/15 21:22:42.128 
+Z slice  50 done:  07/15/15 21:22:50.463 
+Z slice  51 done:  07/15/15 21:22:50.533 
+
+Congratulations! You have got an output anova_LFRONT+tlrc.
+
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+Loading required package: afex
+Loading required package: car
+Loading required package: lme4
+Loading required package: Matrix
+Loading required package: reshape2
+************
+Welcome to afex. Important notes:
+
+Due to popular demand, afex doesn't change the contrasts globally anymore.
+To set contrasts globally to contr.sum run set_sum_contrasts().
+To set contrasts globally to the default (treatment) contrasts run set_default_contrasts().
+
+All afex functions are unaffected by global contrasts and use contr.sum as long as check.contr = TRUE (which is the default).
+************
+Package afex loaded successfully!
+
+Loading required package: phia
+Package phia loaded successfully!
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+***** Summary information of data structure *****
+18 subjects :  001 002 004 005 006 007 008 009 010 011 012 013 014 015 016 017 018 019 
+36 response values
+2 levels for factor Group : G1 G2 
+2 levels for factor Visit : V1 V2 
+2 levels for factor SideOp : L R 
+4 post hoc tests
+
+Contingency tables of subject distributions among the categorical variables:
+
+, , Visit = V1
+
+     SideOp
+Group L R
+   G1 6 5
+   G2 2 5
+
+, , Visit = V2
+
+     SideOp
+Group L R
+   G1 6 5
+   G2 2 5
+
+
+Tabulation of subjects against each of the categorical variables:
+~~~~~~~~~~~~~~
+lop$nSubj vs Group:
+     
+      G1 G2
+  001  2  0
+  002  0  2
+  004  2  0
+  005  0  2
+  006  2  0
+  007  0  2
+  008  0  2
+  009  2  0
+  010  2  0
+  011  2  0
+  012  0  2
+  013  2  0
+  014  2  0
+  015  0  2
+  016  2  0
+  017  0  2
+  018  2  0
+  019  2  0
+
+~~~~~~~~~~~~~~
+lop$nSubj vs Visit:
+     
+      V1 V2
+  001  1  1
+  002  1  1
+  004  1  1
+  005  1  1
+  006  1  1
+  007  1  1
+  008  1  1
+  009  1  1
+  010  1  1
+  011  1  1
+  012  1  1
+  013  1  1
+  014  1  1
+  015  1  1
+  016  1  1
+  017  1  1
+  018  1  1
+  019  1  1
+
+~~~~~~~~~~~~~~
+lop$nSubj vs SideOp:
+     
+      L R
+  001 0 2
+  002 0 2
+  004 2 0
+  005 2 0
+  006 2 0
+  007 2 0
+  008 0 2
+  009 0 2
+  010 0 2
+  011 0 2
+  012 0 2
+  013 2 0
+  014 0 2
+  015 0 2
+  016 2 0
+  017 0 2
+  018 2 0
+  019 2 0
+
+***** End of data structure information *****
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Reading input files now...
+
+Reading input files: Done!
+
+If the program hangs here for more than, for example, half an hour,
+kill the process because the model specification or the GLT coding
+is likely inappropriate.
+
+[1] "Great, test run passed at voxel (16, 31, 25)!"
+[1] "Start to compute 51 slices along Z axis. You can monitor the progress"
+[1] "and estimate the total run time as shown below."
+[1] "07/15/15 21:23:02.366"
+Loading required package: snow
+Package snow loaded successfully!
+
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+Z slice  1 done:  07/15/15 21:23:08.700 
+Z slice  2 done:  07/15/15 21:23:09.205 
+Z slice  3 done:  07/15/15 21:23:09.304 
+Z slice  4 done:  07/15/15 21:23:09.443 
+Z slice  5 done:  07/15/15 21:23:09.552 
+Z slice  6 done:  07/15/15 21:23:11.769 
+Z slice  7 done:  07/15/15 21:23:28.785 
+Z slice  8 done:  07/15/15 21:23:57.259 
+Z slice  9 done:  07/15/15 21:24:36.245 
+Z slice  10 done:  07/15/15 21:25:25.092 
+Z slice  11 done:  07/15/15 21:26:16.568 
+Z slice  12 done:  07/15/15 21:27:09.166 
+Z slice  13 done:  07/15/15 21:28:04.071 
+Z slice  14 done:  07/15/15 21:29:04.903 
+Z slice  15 done:  07/15/15 21:30:08.341 
+Z slice  16 done:  07/15/15 21:31:12.946 
+Z slice  17 done:  07/15/15 21:32:18.377 
+Z slice  18 done:  07/15/15 21:33:23.471 
+Z slice  19 done:  07/15/15 21:34:30.686 
+Z slice  20 done:  07/15/15 21:35:36.961 
+Z slice  21 done:  07/15/15 21:36:42.658 
+Z slice  22 done:  07/15/15 21:37:47.777 
+Z slice  23 done:  07/15/15 21:38:52.490 
+Z slice  24 done:  07/15/15 21:39:57.231 
+Z slice  25 done:  07/15/15 21:41:03.659 
+Z slice  26 done:  07/15/15 21:42:10.048 
+Z slice  27 done:  07/15/15 21:43:15.394 
+Z slice  28 done:  07/15/15 21:44:20.520 
+Z slice  29 done:  07/15/15 21:45:24.269 
+Z slice  30 done:  07/15/15 21:46:27.828 
+Z slice  31 done:  07/15/15 21:47:31.733 
+Z slice  32 done:  07/15/15 21:48:36.246 
+Z slice  33 done:  07/15/15 21:49:40.833 
+Z slice  34 done:  07/15/15 21:50:44.790 
+Z slice  35 done:  07/15/15 21:51:49.086 
+Z slice  36 done:  07/15/15 21:52:52.442 
+Z slice  37 done:  07/15/15 21:53:54.991 
+Z slice  38 done:  07/15/15 21:54:56.087 
+Z slice  39 done:  07/15/15 21:55:56.353 
+Z slice  40 done:  07/15/15 21:56:53.620 
+Z slice  41 done:  07/15/15 21:57:50.346 
+Z slice  42 done:  07/15/15 21:58:44.200 
+Z slice  43 done:  07/15/15 21:59:35.527 
+Z slice  44 done:  07/15/15 22:00:22.753 
+Z slice  45 done:  07/15/15 22:01:06.341 
+Z slice  46 done:  07/15/15 22:01:45.713 
+Z slice  47 done:  07/15/15 22:02:23.150 
+Z slice  48 done:  07/15/15 22:02:54.800 
+Z slice  49 done:  07/15/15 22:03:17.251 
+Z slice  50 done:  07/15/15 22:03:25.770 
+Z slice  51 done:  07/15/15 22:03:25.902 
+
+Congratulations! You have got an output anova_MTEMP+tlrc.
+
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+Loading required package: afex
+Loading required package: car
+Loading required package: lme4
+Loading required package: Matrix
+Loading required package: reshape2
+************
+Welcome to afex. Important notes:
+
+Due to popular demand, afex doesn't change the contrasts globally anymore.
+To set contrasts globally to contr.sum run set_sum_contrasts().
+To set contrasts globally to the default (treatment) contrasts run set_default_contrasts().
+
+All afex functions are unaffected by global contrasts and use contr.sum as long as check.contr = TRUE (which is the default).
+************
+Package afex loaded successfully!
+
+Loading required package: phia
+Package phia loaded successfully!
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+***** Summary information of data structure *****
+18 subjects :  001 002 004 005 006 007 008 009 010 011 012 013 014 015 016 017 018 019 
+36 response values
+2 levels for factor Group : G1 G2 
+2 levels for factor Visit : V1 V2 
+2 levels for factor SideOp : L R 
+4 post hoc tests
+
+Contingency tables of subject distributions among the categorical variables:
+
+, , Visit = V1
+
+     SideOp
+Group L R
+   G1 6 5
+   G2 2 5
+
+, , Visit = V2
+
+     SideOp
+Group L R
+   G1 6 5
+   G2 2 5
+
+
+Tabulation of subjects against each of the categorical variables:
+~~~~~~~~~~~~~~
+lop$nSubj vs Group:
+     
+      G1 G2
+  001  2  0
+  002  0  2
+  004  2  0
+  005  0  2
+  006  2  0
+  007  0  2
+  008  0  2
+  009  2  0
+  010  2  0
+  011  2  0
+  012  0  2
+  013  2  0
+  014  2  0
+  015  0  2
+  016  2  0
+  017  0  2
+  018  2  0
+  019  2  0
+
+~~~~~~~~~~~~~~
+lop$nSubj vs Visit:
+     
+      V1 V2
+  001  1  1
+  002  1  1
+  004  1  1
+  005  1  1
+  006  1  1
+  007  1  1
+  008  1  1
+  009  1  1
+  010  1  1
+  011  1  1
+  012  1  1
+  013  1  1
+  014  1  1
+  015  1  1
+  016  1  1
+  017  1  1
+  018  1  1
+  019  1  1
+
+~~~~~~~~~~~~~~
+lop$nSubj vs SideOp:
+     
+      L R
+  001 0 2
+  002 0 2
+  004 2 0
+  005 2 0
+  006 2 0
+  007 2 0
+  008 0 2
+  009 0 2
+  010 0 2
+  011 0 2
+  012 0 2
+  013 2 0
+  014 0 2
+  015 0 2
+  016 2 0
+  017 0 2
+  018 2 0
+  019 2 0
+
+***** End of data structure information *****
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Reading input files now...
+
+Reading input files: Done!
+
+If the program hangs here for more than, for example, half an hour,
+kill the process because the model specification or the GLT coding
+is likely inappropriate.
+
+[1] "Great, test run passed at voxel (16, 31, 25)!"
+[1] "Start to compute 51 slices along Z axis. You can monitor the progress"
+[1] "and estimate the total run time as shown below."
+[1] "07/15/15 22:03:37.780"
+Loading required package: snow
+Package snow loaded successfully!
+
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+Z slice  1 done:  07/15/15 22:03:44.388 
+Z slice  2 done:  07/15/15 22:03:44.834 
+Z slice  3 done:  07/15/15 22:03:44.935 
+Z slice  4 done:  07/15/15 22:03:45.049 
+Z slice  5 done:  07/15/15 22:03:45.154 
+Z slice  6 done:  07/15/15 22:03:47.407 
+Z slice  7 done:  07/15/15 22:04:04.167 
+Z slice  8 done:  07/15/15 22:04:32.353 
+Z slice  9 done:  07/15/15 22:05:11.112 
+Z slice  10 done:  07/15/15 22:06:00.080 
+Z slice  11 done:  07/15/15 22:06:51.632 
+Z slice  12 done:  07/15/15 22:07:45.019 
+Z slice  13 done:  07/15/15 22:08:41.081 
+Z slice  14 done:  07/15/15 22:09:41.908 
+Z slice  15 done:  07/15/15 22:10:44.848 
+Z slice  16 done:  07/15/15 22:11:49.355 
+Z slice  17 done:  07/15/15 22:12:54.346 
+Z slice  18 done:  07/15/15 22:13:59.941 
+Z slice  19 done:  07/15/15 22:15:07.098 
+Z slice  20 done:  07/15/15 22:16:13.564 
+Z slice  21 done:  07/15/15 22:17:19.818 
+Z slice  22 done:  07/15/15 22:18:25.122 
+Z slice  23 done:  07/15/15 22:19:30.091 
+Z slice  24 done:  07/15/15 22:20:35.868 
+Z slice  25 done:  07/15/15 22:21:42.591 
+Z slice  26 done:  07/15/15 22:22:48.877 
+Z slice  27 done:  07/15/15 22:23:54.096 
+Z slice  28 done:  07/15/15 22:24:58.211 
+Z slice  29 done:  07/15/15 22:26:01.181 
+Z slice  30 done:  07/15/15 22:27:04.493 
+Z slice  31 done:  07/15/15 22:28:08.500 
+Z slice  32 done:  07/15/15 22:29:12.969 
+Z slice  33 done:  07/15/15 22:30:18.580 
+Z slice  34 done:  07/15/15 22:31:23.327 
+Z slice  35 done:  07/15/15 22:32:27.391 
+Z slice  36 done:  07/15/15 22:33:30.803 
+Z slice  37 done:  07/15/15 22:34:33.208 
+Z slice  38 done:  07/15/15 22:35:34.401 
+Z slice  39 done:  07/15/15 22:36:34.147 
+Z slice  40 done:  07/15/15 22:37:32.647 
+Z slice  41 done:  07/15/15 22:38:28.664 
+Z slice  42 done:  07/15/15 22:39:21.795 
+Z slice  43 done:  07/15/15 22:40:11.833 
+Z slice  44 done:  07/15/15 22:41:00.238 
+Z slice  45 done:  07/15/15 22:41:44.108 
+Z slice  46 done:  07/15/15 22:42:24.489 
+Z slice  47 done:  07/15/15 22:43:00.816 
+Z slice  48 done:  07/15/15 22:43:30.369 
+Z slice  49 done:  07/15/15 22:43:53.140 
+Z slice  50 done:  07/15/15 22:44:01.488 
+Z slice  51 done:  07/15/15 22:44:01.584 
+
+Congratulations! You have got an output anova_PODMN+tlrc.
+
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+Loading required package: afex
+Loading required package: car
+Loading required package: lme4
+Loading required package: Matrix
+Loading required package: reshape2
+************
+Welcome to afex. Important notes:
+
+Due to popular demand, afex doesn't change the contrasts globally anymore.
+To set contrasts globally to contr.sum run set_sum_contrasts().
+To set contrasts globally to the default (treatment) contrasts run set_default_contrasts().
+
+All afex functions are unaffected by global contrasts and use contr.sum as long as check.contr = TRUE (which is the default).
+************
+Package afex loaded successfully!
+
+Loading required package: phia
+Package phia loaded successfully!
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+***** Summary information of data structure *****
+18 subjects :  001 002 004 005 006 007 008 009 010 011 012 013 014 015 016 017 018 019 
+36 response values
+2 levels for factor Group : G1 G2 
+2 levels for factor Visit : V1 V2 
+2 levels for factor SideOp : L R 
+4 post hoc tests
+
+Contingency tables of subject distributions among the categorical variables:
+
+, , Visit = V1
+
+     SideOp
+Group L R
+   G1 6 5
+   G2 2 5
+
+, , Visit = V2
+
+     SideOp
+Group L R
+   G1 6 5
+   G2 2 5
+
+
+Tabulation of subjects against each of the categorical variables:
+~~~~~~~~~~~~~~
+lop$nSubj vs Group:
+     
+      G1 G2
+  001  2  0
+  002  0  2
+  004  2  0
+  005  0  2
+  006  2  0
+  007  0  2
+  008  0  2
+  009  2  0
+  010  2  0
+  011  2  0
+  012  0  2
+  013  2  0
+  014  2  0
+  015  0  2
+  016  2  0
+  017  0  2
+  018  2  0
+  019  2  0
+
+~~~~~~~~~~~~~~
+lop$nSubj vs Visit:
+     
+      V1 V2
+  001  1  1
+  002  1  1
+  004  1  1
+  005  1  1
+  006  1  1
+  007  1  1
+  008  1  1
+  009  1  1
+  010  1  1
+  011  1  1
+  012  1  1
+  013  1  1
+  014  1  1
+  015  1  1
+  016  1  1
+  017  1  1
+  018  1  1
+  019  1  1
+
+~~~~~~~~~~~~~~
+lop$nSubj vs SideOp:
+     
+      L R
+  001 0 2
+  002 0 2
+  004 2 0
+  005 2 0
+  006 2 0
+  007 2 0
+  008 0 2
+  009 0 2
+  010 0 2
+  011 0 2
+  012 0 2
+  013 2 0
+  014 0 2
+  015 0 2
+  016 2 0
+  017 0 2
+  018 2 0
+  019 2 0
+
+***** End of data structure information *****
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Reading input files now...
+
+Reading input files: Done!
+
+If the program hangs here for more than, for example, half an hour,
+kill the process because the model specification or the GLT coding
+is likely inappropriate.
+
+[1] "Great, test run passed at voxel (16, 31, 25)!"
+[1] "Start to compute 51 slices along Z axis. You can monitor the progress"
+[1] "and estimate the total run time as shown below."
+[1] "07/15/15 22:44:14.174"
+Loading required package: snow
+Package snow loaded successfully!
+
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+Z slice  1 done:  07/15/15 22:44:20.288 
+Z slice  2 done:  07/15/15 22:44:20.704 
+Z slice  3 done:  07/15/15 22:44:20.804 
+Z slice  4 done:  07/15/15 22:44:20.914 
+Z slice  5 done:  07/15/15 22:44:21.019 
+Z slice  6 done:  07/15/15 22:44:23.068 
+Z slice  7 done:  07/15/15 22:44:39.909 
+Z slice  8 done:  07/15/15 22:45:08.877 
+Z slice  9 done:  07/15/15 22:45:47.769 
+Z slice  10 done:  07/15/15 22:46:37.117 
+Z slice  11 done:  07/15/15 22:47:29.669 
+Z slice  12 done:  07/15/15 22:48:22.625 
+Z slice  13 done:  07/15/15 22:49:18.013 
+Z slice  14 done:  07/15/15 22:50:18.870 
+Z slice  15 done:  07/15/15 22:51:21.038 
+Z slice  16 done:  07/15/15 22:52:25.092 
+Z slice  17 done:  07/15/15 22:53:30.987 
+Z slice  18 done:  07/15/15 22:54:36.077 
+Z slice  19 done:  07/15/15 22:55:43.230 
+Z slice  20 done:  07/15/15 22:56:50.071 
+Z slice  21 done:  07/15/15 22:57:56.602 
+Z slice  22 done:  07/15/15 22:59:01.760 
+Z slice  23 done:  07/15/15 23:00:06.352 
+Z slice  24 done:  07/15/15 23:01:11.388 
+Z slice  25 done:  07/15/15 23:02:17.691 
+Z slice  26 done:  07/15/15 23:03:23.797 
+Z slice  27 done:  07/15/15 23:04:28.658 
+Z slice  28 done:  07/15/15 23:05:33.246 
+Z slice  29 done:  07/15/15 23:06:38.348 
+Z slice  30 done:  07/15/15 23:07:41.306 
+Z slice  31 done:  07/15/15 23:08:45.123 
+Z slice  32 done:  07/15/15 23:09:50.240 
+Z slice  33 done:  07/15/15 23:10:54.514 
+Z slice  34 done:  07/15/15 23:12:00.178 
+Z slice  35 done:  07/15/15 23:13:05.209 
+Z slice  36 done:  07/15/15 23:14:08.227 
+Z slice  37 done:  07/15/15 23:15:11.523 
+Z slice  38 done:  07/15/15 23:16:12.836 
+Z slice  39 done:  07/15/15 23:17:12.376 
+Z slice  40 done:  07/15/15 23:18:10.028 
+Z slice  41 done:  07/15/15 23:19:06.092 
+Z slice  42 done:  07/15/15 23:19:59.478 
+Z slice  43 done:  07/15/15 23:20:51.665 
+Z slice  44 done:  07/15/15 23:21:39.273 
+Z slice  45 done:  07/15/15 23:22:22.964 
+Z slice  46 done:  07/15/15 23:23:03.672 
+Z slice  47 done:  07/15/15 23:23:40.049 
+Z slice  48 done:  07/15/15 23:24:11.151 
+Z slice  49 done:  07/15/15 23:24:33.311 
+Z slice  50 done:  07/15/15 23:24:42.216 
+Z slice  51 done:  07/15/15 23:24:42.292 
+
+Congratulations! You have got an output anova_PUT+tlrc.
+
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+Loading required package: afex
+Loading required package: car
+Loading required package: lme4
+Loading required package: Matrix
+Loading required package: reshape2
+************
+Welcome to afex. Important notes:
+
+Due to popular demand, afex doesn't change the contrasts globally anymore.
+To set contrasts globally to contr.sum run set_sum_contrasts().
+To set contrasts globally to the default (treatment) contrasts run set_default_contrasts().
+
+All afex functions are unaffected by global contrasts and use contr.sum as long as check.contr = TRUE (which is the default).
+************
+Package afex loaded successfully!
+
+Loading required package: phia
+Package phia loaded successfully!
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+***** Summary information of data structure *****
+18 subjects :  001 002 004 005 006 007 008 009 010 011 012 013 014 015 016 017 018 019 
+36 response values
+2 levels for factor Group : G1 G2 
+2 levels for factor Visit : V1 V2 
+2 levels for factor SideOp : L R 
+4 post hoc tests
+
+Contingency tables of subject distributions among the categorical variables:
+
+, , Visit = V1
+
+     SideOp
+Group L R
+   G1 6 5
+   G2 2 5
+
+, , Visit = V2
+
+     SideOp
+Group L R
+   G1 6 5
+   G2 2 5
+
+
+Tabulation of subjects against each of the categorical variables:
+~~~~~~~~~~~~~~
+lop$nSubj vs Group:
+     
+      G1 G2
+  001  2  0
+  002  0  2
+  004  2  0
+  005  0  2
+  006  2  0
+  007  0  2
+  008  0  2
+  009  2  0
+  010  2  0
+  011  2  0
+  012  0  2
+  013  2  0
+  014  2  0
+  015  0  2
+  016  2  0
+  017  0  2
+  018  2  0
+  019  2  0
+
+~~~~~~~~~~~~~~
+lop$nSubj vs Visit:
+     
+      V1 V2
+  001  1  1
+  002  1  1
+  004  1  1
+  005  1  1
+  006  1  1
+  007  1  1
+  008  1  1
+  009  1  1
+  010  1  1
+  011  1  1
+  012  1  1
+  013  1  1
+  014  1  1
+  015  1  1
+  016  1  1
+  017  1  1
+  018  1  1
+  019  1  1
+
+~~~~~~~~~~~~~~
+lop$nSubj vs SideOp:
+     
+      L R
+  001 0 2
+  002 0 2
+  004 2 0
+  005 2 0
+  006 2 0
+  007 2 0
+  008 0 2
+  009 0 2
+  010 0 2
+  011 0 2
+  012 0 2
+  013 2 0
+  014 0 2
+  015 0 2
+  016 2 0
+  017 0 2
+  018 2 0
+  019 2 0
+
+***** End of data structure information *****
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Reading input files now...
+
+Reading input files: Done!
+
+If the program hangs here for more than, for example, half an hour,
+kill the process because the model specification or the GLT coding
+is likely inappropriate.
+
+[1] "Great, test run passed at voxel (16, 31, 25)!"
+[1] "Start to compute 51 slices along Z axis. You can monitor the progress"
+[1] "and estimate the total run time as shown below."
+[1] "07/15/15 23:24:55.775"
+Loading required package: snow
+Package snow loaded successfully!
+
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+Z slice  1 done:  07/15/15 23:25:01.962 
+Z slice  2 done:  07/15/15 23:25:02.412 
+Z slice  3 done:  07/15/15 23:25:02.498 
+Z slice  4 done:  07/15/15 23:25:02.602 
+Z slice  5 done:  07/15/15 23:25:02.708 
+Z slice  6 done:  07/15/15 23:25:04.765 
+Z slice  7 done:  07/15/15 23:25:21.655 
+Z slice  8 done:  07/15/15 23:25:50.542 
+Z slice  9 done:  07/15/15 23:26:29.306 
+Z slice  10 done:  07/15/15 23:27:17.089 
+Z slice  11 done:  07/15/15 23:28:08.151 
+Z slice  12 done:  07/15/15 23:29:01.035 
+Z slice  13 done:  07/15/15 23:29:56.248 
+Z slice  14 done:  07/15/15 23:30:57.010 
+Z slice  15 done:  07/15/15 23:32:00.232 
+Z slice  16 done:  07/15/15 23:33:06.168 
+Z slice  17 done:  07/15/15 23:34:12.398 
+Z slice  18 done:  07/15/15 23:35:17.930 
+Z slice  19 done:  07/15/15 23:36:24.229 
+Z slice  20 done:  07/15/15 23:37:30.138 
+Z slice  21 done:  07/15/15 23:38:35.872 
+Z slice  22 done:  07/15/15 23:39:40.379 
+Z slice  23 done:  07/15/15 23:40:45.298 
+Z slice  24 done:  07/15/15 23:41:50.845 
+Z slice  25 done:  07/15/15 23:42:57.574 
+Z slice  26 done:  07/15/15 23:44:03.584 
+Z slice  27 done:  07/15/15 23:45:09.064 
+Z slice  28 done:  07/15/15 23:46:14.499 
+Z slice  29 done:  07/15/15 23:47:18.306 
+Z slice  30 done:  07/15/15 23:48:21.845 
+Z slice  31 done:  07/15/15 23:49:25.937 
+Z slice  32 done:  07/15/15 23:50:30.512 
+Z slice  33 done:  07/15/15 23:51:35.225 
+Z slice  34 done:  07/15/15 23:52:39.836 
+Z slice  35 done:  07/15/15 23:53:43.547 
+Z slice  36 done:  07/15/15 23:54:46.798 
+Z slice  37 done:  07/15/15 23:55:49.367 
+Z slice  38 done:  07/15/15 23:56:51.556 
+Z slice  39 done:  07/15/15 23:57:51.985 
+Z slice  40 done:  07/15/15 23:58:50.491 
+Z slice  41 done:  07/15/15 23:59:47.122 
+Z slice  42 done:  07/16/15 00:00:40.620 
+Z slice  43 done:  07/16/15 00:01:31.511 
+Z slice  44 done:  07/16/15 00:02:19.897 
+Z slice  45 done:  07/16/15 00:03:05.028 
+Z slice  46 done:  07/16/15 00:03:45.766 
+Z slice  47 done:  07/16/15 00:04:22.577 
+Z slice  48 done:  07/16/15 00:04:53.125 
+Z slice  49 done:  07/16/15 00:05:15.007 
+Z slice  50 done:  07/16/15 00:05:23.200 
+Z slice  51 done:  07/16/15 00:05:23.299 
+
+Congratulations! You have got an output anova_RFRONT+tlrc.
+
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+Loading required package: afex
+Loading required package: car
+Loading required package: lme4
+Loading required package: Matrix
+Loading required package: reshape2
+************
+Welcome to afex. Important notes:
+
+Due to popular demand, afex doesn't change the contrasts globally anymore.
+To set contrasts globally to contr.sum run set_sum_contrasts().
+To set contrasts globally to the default (treatment) contrasts run set_default_contrasts().
+
+All afex functions are unaffected by global contrasts and use contr.sum as long as check.contr = TRUE (which is the default).
+************
+Package afex loaded successfully!
+
+Loading required package: phia
+Package phia loaded successfully!
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+***** Summary information of data structure *****
+18 subjects :  001 002 004 005 006 007 008 009 010 011 012 013 014 015 016 017 018 019 
+36 response values
+2 levels for factor Group : G1 G2 
+2 levels for factor Visit : V1 V2 
+2 levels for factor SideOp : L R 
+4 post hoc tests
+
+Contingency tables of subject distributions among the categorical variables:
+
+, , Visit = V1
+
+     SideOp
+Group L R
+   G1 6 5
+   G2 2 5
+
+, , Visit = V2
+
+     SideOp
+Group L R
+   G1 6 5
+   G2 2 5
+
+
+Tabulation of subjects against each of the categorical variables:
+~~~~~~~~~~~~~~
+lop$nSubj vs Group:
+     
+      G1 G2
+  001  2  0
+  002  0  2
+  004  2  0
+  005  0  2
+  006  2  0
+  007  0  2
+  008  0  2
+  009  2  0
+  010  2  0
+  011  2  0
+  012  0  2
+  013  2  0
+  014  2  0
+  015  0  2
+  016  2  0
+  017  0  2
+  018  2  0
+  019  2  0
+
+~~~~~~~~~~~~~~
+lop$nSubj vs Visit:
+     
+      V1 V2
+  001  1  1
+  002  1  1
+  004  1  1
+  005  1  1
+  006  1  1
+  007  1  1
+  008  1  1
+  009  1  1
+  010  1  1
+  011  1  1
+  012  1  1
+  013  1  1
+  014  1  1
+  015  1  1
+  016  1  1
+  017  1  1
+  018  1  1
+  019  1  1
+
+~~~~~~~~~~~~~~
+lop$nSubj vs SideOp:
+     
+      L R
+  001 0 2
+  002 0 2
+  004 2 0
+  005 2 0
+  006 2 0
+  007 2 0
+  008 0 2
+  009 0 2
+  010 0 2
+  011 0 2
+  012 0 2
+  013 2 0
+  014 0 2
+  015 0 2
+  016 2 0
+  017 0 2
+  018 2 0
+  019 2 0
+
+***** End of data structure information *****
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Reading input files now...
+
+Reading input files: Done!
+
+If the program hangs here for more than, for example, half an hour,
+kill the process because the model specification or the GLT coding
+is likely inappropriate.
+
+[1] "Great, test run passed at voxel (16, 31, 25)!"
+[1] "Start to compute 51 slices along Z axis. You can monitor the progress"
+[1] "and estimate the total run time as shown below."
+[1] "07/16/15 00:05:34.594"
+Loading required package: snow
+Package snow loaded successfully!
+
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+Z slice  1 done:  07/16/15 00:05:40.971 
+Z slice  2 done:  07/16/15 00:05:41.387 
+Z slice  3 done:  07/16/15 00:05:41.525 
+Z slice  4 done:  07/16/15 00:05:41.638 
+Z slice  5 done:  07/16/15 00:05:41.748 
+Z slice  6 done:  07/16/15 00:05:43.855 
+Z slice  7 done:  07/16/15 00:06:00.680 
+Z slice  8 done:  07/16/15 00:06:29.483 
+Z slice  9 done:  07/16/15 00:07:08.615 
+Z slice  10 done:  07/16/15 00:07:57.887 
+Z slice  11 done:  07/16/15 00:08:48.919 
+Z slice  12 done:  07/16/15 00:09:41.416 
+Z slice  13 done:  07/16/15 00:10:36.841 
+Z slice  14 done:  07/16/15 00:11:37.580 
+Z slice  15 done:  07/16/15 00:12:40.022 
+Z slice  16 done:  07/16/15 00:13:44.242 
+Z slice  17 done:  07/16/15 00:14:49.630 
+Z slice  18 done:  07/16/15 00:15:55.374 
+Z slice  19 done:  07/16/15 00:17:01.833 
+Z slice  20 done:  07/16/15 00:18:08.579 
+Z slice  21 done:  07/16/15 00:19:14.577 
+Z slice  22 done:  07/16/15 00:20:21.233 
+Z slice  23 done:  07/16/15 00:21:25.962 
+Z slice  24 done:  07/16/15 00:22:31.414 
+Z slice  25 done:  07/16/15 00:23:38.335 
+Z slice  26 done:  07/16/15 00:24:44.290 
+Z slice  27 done:  07/16/15 00:25:49.315 
+Z slice  28 done:  07/16/15 00:26:54.379 
+Z slice  29 done:  07/16/15 00:27:58.022 
+Z slice  30 done:  07/16/15 00:29:00.281 
+Z slice  31 done:  07/16/15 00:30:04.123 
+Z slice  32 done:  07/16/15 00:31:08.935 
+Z slice  33 done:  07/16/15 00:32:13.472 
+Z slice  34 done:  07/16/15 00:33:17.807 
+Z slice  35 done:  07/16/15 00:34:21.272 
+Z slice  36 done:  07/16/15 00:35:24.195 
+Z slice  37 done:  07/16/15 00:36:26.387 
+Z slice  38 done:  07/16/15 00:37:27.556 
+Z slice  39 done:  07/16/15 00:38:27.235 
+Z slice  40 done:  07/16/15 00:39:25.198 
+Z slice  41 done:  07/16/15 00:40:20.630 
+Z slice  42 done:  07/16/15 00:41:14.463 
+Z slice  43 done:  07/16/15 00:42:05.394 
+Z slice  44 done:  07/16/15 00:42:53.099 
+Z slice  45 done:  07/16/15 00:43:37.015 
+Z slice  46 done:  07/16/15 00:44:17.132 
+Z slice  47 done:  07/16/15 00:44:53.366 
+Z slice  48 done:  07/16/15 00:45:23.926 
+Z slice  49 done:  07/16/15 00:45:46.568 
+Z slice  50 done:  07/16/15 00:45:54.807 
+Z slice  51 done:  07/16/15 00:45:54.888 
+
+Congratulations! You have got an output anova_EXEC+tlrc.
+
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+Loading required package: afex
+Loading required package: car
+Loading required package: lme4
+Loading required package: Matrix
+Loading required package: reshape2
+************
+Welcome to afex. Important notes:
+
+Due to popular demand, afex doesn't change the contrasts globally anymore.
+To set contrasts globally to contr.sum run set_sum_contrasts().
+To set contrasts globally to the default (treatment) contrasts run set_default_contrasts().
+
+All afex functions are unaffected by global contrasts and use contr.sum as long as check.contr = TRUE (which is the default).
+************
+Package afex loaded successfully!
+
+Loading required package: phia
+Package phia loaded successfully!
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+***** Summary information of data structure *****
+18 subjects :  001 002 004 005 006 007 008 009 010 011 012 013 014 015 016 017 018 019 
+36 response values
+2 levels for factor Group : G1 G2 
+2 levels for factor Visit : V1 V2 
+2 levels for factor SideOp : L R 
+4 post hoc tests
+
+Contingency tables of subject distributions among the categorical variables:
+
+, , Visit = V1
+
+     SideOp
+Group L R
+   G1 6 5
+   G2 2 5
+
+, , Visit = V2
+
+     SideOp
+Group L R
+   G1 6 5
+   G2 2 5
+
+
+Tabulation of subjects against each of the categorical variables:
+~~~~~~~~~~~~~~
+lop$nSubj vs Group:
+     
+      G1 G2
+  001  2  0
+  002  0  2
+  004  2  0
+  005  0  2
+  006  2  0
+  007  0  2
+  008  0  2
+  009  2  0
+  010  2  0
+  011  2  0
+  012  0  2
+  013  2  0
+  014  2  0
+  015  0  2
+  016  2  0
+  017  0  2
+  018  2  0
+  019  2  0
+
+~~~~~~~~~~~~~~
+lop$nSubj vs Visit:
+     
+      V1 V2
+  001  1  1
+  002  1  1
+  004  1  1
+  005  1  1
+  006  1  1
+  007  1  1
+  008  1  1
+  009  1  1
+  010  1  1
+  011  1  1
+  012  1  1
+  013  1  1
+  014  1  1
+  015  1  1
+  016  1  1
+  017  1  1
+  018  1  1
+  019  1  1
+
+~~~~~~~~~~~~~~
+lop$nSubj vs SideOp:
+     
+      L R
+  001 0 2
+  002 0 2
+  004 2 0
+  005 2 0
+  006 2 0
+  007 2 0
+  008 0 2
+  009 0 2
+  010 0 2
+  011 0 2
+  012 0 2
+  013 2 0
+  014 0 2
+  015 0 2
+  016 2 0
+  017 0 2
+  018 2 0
+  019 2 0
+
+***** End of data structure information *****
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Reading input files now...
+
+Reading input files: Done!
+
+If the program hangs here for more than, for example, half an hour,
+kill the process because the model specification or the GLT coding
+is likely inappropriate.
+
+[1] "Great, test run passed at voxel (16, 31, 25)!"
+[1] "Start to compute 51 slices along Z axis. You can monitor the progress"
+[1] "and estimate the total run time as shown below."
+[1] "07/16/15 00:46:07.605"
+Loading required package: snow
+Package snow loaded successfully!
+
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+Z slice  1 done:  07/16/15 00:46:14.046 
+Z slice  2 done:  07/16/15 00:46:14.507 
+Z slice  3 done:  07/16/15 00:46:14.621 
+Z slice  4 done:  07/16/15 00:46:14.727 
+Z slice  5 done:  07/16/15 00:46:14.874 
+Z slice  6 done:  07/16/15 00:46:16.963 
+Z slice  7 done:  07/16/15 00:46:33.549 
+Z slice  8 done:  07/16/15 00:47:02.320 
+Z slice  9 done:  07/16/15 00:47:41.773 
+Z slice  10 done:  07/16/15 00:48:31.210 
+Z slice  11 done:  07/16/15 00:49:22.746 
+Z slice  12 done:  07/16/15 00:50:15.232 
+Z slice  13 done:  07/16/15 00:51:10.202 
+Z slice  14 done:  07/16/15 00:52:10.822 
+Z slice  15 done:  07/16/15 00:53:13.417 
+Z slice  16 done:  07/16/15 00:54:17.613 
+Z slice  17 done:  07/16/15 00:55:24.318 
+Z slice  18 done:  07/16/15 00:56:29.832 
+Z slice  19 done:  07/16/15 00:57:37.294 
+Z slice  20 done:  07/16/15 00:58:44.359 
+Z slice  21 done:  07/16/15 00:59:49.981 
+Z slice  22 done:  07/16/15 01:00:56.275 
+Z slice  23 done:  07/16/15 01:02:01.279 
+Z slice  24 done:  07/16/15 01:03:07.099 
+Z slice  25 done:  07/16/15 01:04:14.379 
+Z slice  26 done:  07/16/15 01:05:21.203 
+Z slice  27 done:  07/16/15 01:06:26.377 
+Z slice  28 done:  07/16/15 01:07:31.570 
+Z slice  29 done:  07/16/15 01:08:35.232 
+Z slice  30 done:  07/16/15 01:09:38.024 
+Z slice  31 done:  07/16/15 01:10:42.205 
+Z slice  32 done:  07/16/15 01:11:46.945 
+Z slice  33 done:  07/16/15 01:12:50.779 
+Z slice  34 done:  07/16/15 01:13:55.303 
+Z slice  35 done:  07/16/15 01:14:58.498 
+Z slice  36 done:  07/16/15 01:16:02.334 
+Z slice  37 done:  07/16/15 01:17:05.352 
+Z slice  38 done:  07/16/15 01:18:06.841 
+Z slice  39 done:  07/16/15 01:19:07.043 
+Z slice  40 done:  07/16/15 01:20:04.803 
+Z slice  41 done:  07/16/15 01:21:01.512 
+Z slice  42 done:  07/16/15 01:21:55.817 
+Z slice  43 done:  07/16/15 01:22:46.520 
+Z slice  44 done:  07/16/15 01:23:34.056 
+Z slice  45 done:  07/16/15 01:24:19.146 
+Z slice  46 done:  07/16/15 01:24:59.229 
+Z slice  47 done:  07/16/15 01:25:35.984 
+Z slice  48 done:  07/16/15 01:26:06.602 
+Z slice  49 done:  07/16/15 01:26:29.295 
+Z slice  50 done:  07/16/15 01:26:37.932 
+Z slice  51 done:  07/16/15 01:26:38.015 
+
+Congratulations! You have got an output anova_MOTPL+tlrc.
+
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+Loading required package: afex
+Loading required package: car
+Loading required package: lme4
+Loading required package: Matrix
+Loading required package: reshape2
+************
+Welcome to afex. Important notes:
+
+Due to popular demand, afex doesn't change the contrasts globally anymore.
+To set contrasts globally to contr.sum run set_sum_contrasts().
+To set contrasts globally to the default (treatment) contrasts run set_default_contrasts().
+
+All afex functions are unaffected by global contrasts and use contr.sum as long as check.contr = TRUE (which is the default).
+************
+Package afex loaded successfully!
+
+Loading required package: phia
+Package phia loaded successfully!
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+***** Summary information of data structure *****
+18 subjects :  001 002 004 005 006 007 008 009 010 011 012 013 014 015 016 017 018 019 
+36 response values
+2 levels for factor Group : G1 G2 
+2 levels for factor Visit : V1 V2 
+2 levels for factor SideOp : L R 
+4 post hoc tests
+
+Contingency tables of subject distributions among the categorical variables:
+
+, , Visit = V1
+
+     SideOp
+Group L R
+   G1 6 5
+   G2 2 5
+
+, , Visit = V2
+
+     SideOp
+Group L R
+   G1 6 5
+   G2 2 5
+
+
+Tabulation of subjects against each of the categorical variables:
+~~~~~~~~~~~~~~
+lop$nSubj vs Group:
+     
+      G1 G2
+  001  2  0
+  002  0  2
+  004  2  0
+  005  0  2
+  006  2  0
+  007  0  2
+  008  0  2
+  009  2  0
+  010  2  0
+  011  2  0
+  012  0  2
+  013  2  0
+  014  2  0
+  015  0  2
+  016  2  0
+  017  0  2
+  018  2  0
+  019  2  0
+
+~~~~~~~~~~~~~~
+lop$nSubj vs Visit:
+     
+      V1 V2
+  001  1  1
+  002  1  1
+  004  1  1
+  005  1  1
+  006  1  1
+  007  1  1
+  008  1  1
+  009  1  1
+  010  1  1
+  011  1  1
+  012  1  1
+  013  1  1
+  014  1  1
+  015  1  1
+  016  1  1
+  017  1  1
+  018  1  1
+  019  1  1
+
+~~~~~~~~~~~~~~
+lop$nSubj vs SideOp:
+     
+      L R
+  001 0 2
+  002 0 2
+  004 2 0
+  005 2 0
+  006 2 0
+  007 2 0
+  008 0 2
+  009 0 2
+  010 0 2
+  011 0 2
+  012 0 2
+  013 2 0
+  014 0 2
+  015 0 2
+  016 2 0
+  017 0 2
+  018 2 0
+  019 2 0
+
+***** End of data structure information *****
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Reading input files now...
+
+Reading input files: Done!
+
+If the program hangs here for more than, for example, half an hour,
+kill the process because the model specification or the GLT coding
+is likely inappropriate.
+
+[1] "Great, test run passed at voxel (16, 31, 25)!"
+[1] "Start to compute 51 slices along Z axis. You can monitor the progress"
+[1] "and estimate the total run time as shown below."
+[1] "07/16/15 01:26:50.883"
+Loading required package: snow
+Package snow loaded successfully!
+
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+Z slice  1 done:  07/16/15 01:26:56.877 
+Z slice  2 done:  07/16/15 01:26:57.272 
+Z slice  3 done:  07/16/15 01:26:57.389 
+Z slice  4 done:  07/16/15 01:26:57.494 
+Z slice  5 done:  07/16/15 01:26:57.611 
+Z slice  6 done:  07/16/15 01:26:59.631 
+Z slice  7 done:  07/16/15 01:27:16.182 
+Z slice  8 done:  07/16/15 01:27:44.973 
+Z slice  9 done:  07/16/15 01:28:24.394 
+Z slice  10 done:  07/16/15 01:29:12.535 
+Z slice  11 done:  07/16/15 01:30:04.239 
+Z slice  12 done:  07/16/15 01:30:57.207 
+Z slice  13 done:  07/16/15 01:31:52.479 
+Z slice  14 done:  07/16/15 01:32:52.913 
+Z slice  15 done:  07/16/15 01:33:55.190 
+Z slice  16 done:  07/16/15 01:34:58.283 
+Z slice  17 done:  07/16/15 01:36:03.978 
+Z slice  18 done:  07/16/15 01:37:10.825 
+Z slice  19 done:  07/16/15 01:38:17.958 
+Z slice  20 done:  07/16/15 01:39:24.054 
+Z slice  21 done:  07/16/15 01:40:29.528 
+Z slice  22 done:  07/16/15 01:41:34.698 
+Z slice  23 done:  07/16/15 01:42:39.307 
+Z slice  24 done:  07/16/15 01:43:44.883 
+Z slice  25 done:  07/16/15 01:44:51.092 
+Z slice  26 done:  07/16/15 01:45:57.018 
+Z slice  27 done:  07/16/15 01:47:01.230 
+Z slice  28 done:  07/16/15 01:48:06.022 
+Z slice  29 done:  07/16/15 01:49:09.160 
+Z slice  30 done:  07/16/15 01:50:11.825 
+Z slice  31 done:  07/16/15 01:51:16.055 
+Z slice  32 done:  07/16/15 01:52:20.168 
+Z slice  33 done:  07/16/15 01:53:24.871 
+Z slice  34 done:  07/16/15 01:54:28.183 
+Z slice  35 done:  07/16/15 01:55:31.755 
+Z slice  36 done:  07/16/15 01:56:34.964 
+Z slice  37 done:  07/16/15 01:57:37.017 
+Z slice  38 done:  07/16/15 01:58:38.146 
+Z slice  39 done:  07/16/15 01:59:37.746 
+Z slice  40 done:  07/16/15 02:00:35.831 
+Z slice  41 done:  07/16/15 02:01:31.563 
+Z slice  42 done:  07/16/15 02:02:24.924 
+Z slice  43 done:  07/16/15 02:03:14.826 
+Z slice  44 done:  07/16/15 02:04:01.838 
+Z slice  45 done:  07/16/15 02:04:45.250 
+Z slice  46 done:  07/16/15 02:05:25.386 
+Z slice  47 done:  07/16/15 02:06:02.312 
+Z slice  48 done:  07/16/15 02:06:32.473 
+Z slice  49 done:  07/16/15 02:06:54.503 
+Z slice  50 done:  07/16/15 02:07:02.897 
+Z slice  51 done:  07/16/15 02:07:02.975 
+
+Congratulations! You have got an output anova_PMOT+tlrc.
+
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+Loading required package: afex
+Loading required package: car
+Loading required package: lme4
+Loading required package: Matrix
+Loading required package: reshape2
+************
+Welcome to afex. Important notes:
+
+Due to popular demand, afex doesn't change the contrasts globally anymore.
+To set contrasts globally to contr.sum run set_sum_contrasts().
+To set contrasts globally to the default (treatment) contrasts run set_default_contrasts().
+
+All afex functions are unaffected by global contrasts and use contr.sum as long as check.contr = TRUE (which is the default).
+************
+Package afex loaded successfully!
+
+Loading required package: phia
+Package phia loaded successfully!
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+***** Summary information of data structure *****
+18 subjects :  001 002 004 005 006 007 008 009 010 011 012 013 014 015 016 017 018 019 
+36 response values
+2 levels for factor Group : G1 G2 
+2 levels for factor Visit : V1 V2 
+2 levels for factor SideOp : L R 
+4 post hoc tests
+
+Contingency tables of subject distributions among the categorical variables:
+
+, , Visit = V1
+
+     SideOp
+Group L R
+   G1 6 5
+   G2 2 5
+
+, , Visit = V2
+
+     SideOp
+Group L R
+   G1 6 5
+   G2 2 5
+
+
+Tabulation of subjects against each of the categorical variables:
+~~~~~~~~~~~~~~
+lop$nSubj vs Group:
+     
+      G1 G2
+  001  2  0
+  002  0  2
+  004  2  0
+  005  0  2
+  006  2  0
+  007  0  2
+  008  0  2
+  009  2  0
+  010  2  0
+  011  2  0
+  012  0  2
+  013  2  0
+  014  2  0
+  015  0  2
+  016  2  0
+  017  0  2
+  018  2  0
+  019  2  0
+
+~~~~~~~~~~~~~~
+lop$nSubj vs Visit:
+     
+      V1 V2
+  001  1  1
+  002  1  1
+  004  1  1
+  005  1  1
+  006  1  1
+  007  1  1
+  008  1  1
+  009  1  1
+  010  1  1
+  011  1  1
+  012  1  1
+  013  1  1
+  014  1  1
+  015  1  1
+  016  1  1
+  017  1  1
+  018  1  1
+  019  1  1
+
+~~~~~~~~~~~~~~
+lop$nSubj vs SideOp:
+     
+      L R
+  001 0 2
+  002 0 2
+  004 2 0
+  005 2 0
+  006 2 0
+  007 2 0
+  008 0 2
+  009 0 2
+  010 0 2
+  011 0 2
+  012 0 2
+  013 2 0
+  014 0 2
+  015 0 2
+  016 2 0
+  017 0 2
+  018 2 0
+  019 2 0
+
+***** End of data structure information *****
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Reading input files now...
+
+Reading input files: Done!
+
+If the program hangs here for more than, for example, half an hour,
+kill the process because the model specification or the GLT coding
+is likely inappropriate.
+
+[1] "Great, test run passed at voxel (16, 31, 25)!"
+[1] "Start to compute 51 slices along Z axis. You can monitor the progress"
+[1] "and estimate the total run time as shown below."
+[1] "07/16/15 02:07:16.806"
+Loading required package: snow
+Package snow loaded successfully!
+
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+Z slice  1 done:  07/16/15 02:07:23.111 
+Z slice  2 done:  07/16/15 02:07:23.558 
+Z slice  3 done:  07/16/15 02:07:23.664 
+Z slice  4 done:  07/16/15 02:07:23.782 
+Z slice  5 done:  07/16/15 02:07:23.893 
+Z slice  6 done:  07/16/15 02:07:25.953 
+Z slice  7 done:  07/16/15 02:07:42.403 
+Z slice  8 done:  07/16/15 02:08:11.800 
+Z slice  9 done:  07/16/15 02:08:50.405 
+Z slice  10 done:  07/16/15 02:09:39.094 
+Z slice  11 done:  07/16/15 02:10:30.232 
+Z slice  12 done:  07/16/15 02:11:23.925 
+Z slice  13 done:  07/16/15 02:12:19.835 
+Z slice  14 done:  07/16/15 02:13:20.651 
+Z slice  15 done:  07/16/15 02:14:23.246 
+Z slice  16 done:  07/16/15 02:15:26.487 
+Z slice  17 done:  07/16/15 02:16:32.501 
+Z slice  18 done:  07/16/15 02:17:38.885 
+Z slice  19 done:  07/16/15 02:18:46.202 
+Z slice  20 done:  07/16/15 02:19:53.450 
+Z slice  21 done:  07/16/15 02:20:59.675 
+Z slice  22 done:  07/16/15 02:22:04.756 
+Z slice  23 done:  07/16/15 02:23:09.944 
+Z slice  24 done:  07/16/15 02:24:14.989 
+Z slice  25 done:  07/16/15 02:25:22.094 
+Z slice  26 done:  07/16/15 02:26:28.965 
+Z slice  27 done:  07/16/15 02:27:33.338 
+Z slice  28 done:  07/16/15 02:28:38.391 
+Z slice  29 done:  07/16/15 02:29:41.562 
+Z slice  30 done:  07/16/15 02:30:44.450 
+Z slice  31 done:  07/16/15 02:31:48.047 
+Z slice  32 done:  07/16/15 02:32:52.449 
+Z slice  33 done:  07/16/15 02:33:58.267 
+Z slice  34 done:  07/16/15 02:35:02.816 
+Z slice  35 done:  07/16/15 02:36:06.740 
+Z slice  36 done:  07/16/15 02:37:10.495 
+Z slice  37 done:  07/16/15 02:38:12.998 
+Z slice  38 done:  07/16/15 02:39:13.368 
+Z slice  39 done:  07/16/15 02:40:14.458 
+Z slice  40 done:  07/16/15 02:41:12.207 
+Z slice  41 done:  07/16/15 02:42:07.953 
+Z slice  42 done:  07/16/15 02:43:01.766 
+Z slice  43 done:  07/16/15 02:43:52.186 
+Z slice  44 done:  07/16/15 02:44:39.824 
+Z slice  45 done:  07/16/15 02:45:23.769 
+Z slice  46 done:  07/16/15 02:46:04.207 
+Z slice  47 done:  07/16/15 02:46:40.268 
+Z slice  48 done:  07/16/15 02:47:11.023 
+Z slice  49 done:  07/16/15 02:47:33.335 
+Z slice  50 done:  07/16/15 02:47:41.814 
+Z slice  51 done:  07/16/15 02:47:41.895 
+
+Congratulations! You have got an output anova_PRDMN+tlrc.
+
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+Loading required package: afex
+Loading required package: car
+Loading required package: lme4
+Loading required package: Matrix
+Loading required package: reshape2
+************
+Welcome to afex. Important notes:
+
+Due to popular demand, afex doesn't change the contrasts globally anymore.
+To set contrasts globally to contr.sum run set_sum_contrasts().
+To set contrasts globally to the default (treatment) contrasts run set_default_contrasts().
+
+All afex functions are unaffected by global contrasts and use contr.sum as long as check.contr = TRUE (which is the default).
+************
+Package afex loaded successfully!
+
+Loading required package: phia
+Package phia loaded successfully!
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+***** Summary information of data structure *****
+18 subjects :  001 002 004 005 006 007 008 009 010 011 012 013 014 015 016 017 018 019 
+36 response values
+2 levels for factor Group : G1 G2 
+2 levels for factor Visit : V1 V2 
+2 levels for factor SideOp : L R 
+4 post hoc tests
+
+Contingency tables of subject distributions among the categorical variables:
+
+, , Visit = V1
+
+     SideOp
+Group L R
+   G1 6 5
+   G2 2 5
+
+, , Visit = V2
+
+     SideOp
+Group L R
+   G1 6 5
+   G2 2 5
+
+
+Tabulation of subjects against each of the categorical variables:
+~~~~~~~~~~~~~~
+lop$nSubj vs Group:
+     
+      G1 G2
+  001  2  0
+  002  0  2
+  004  2  0
+  005  0  2
+  006  2  0
+  007  0  2
+  008  0  2
+  009  2  0
+  010  2  0
+  011  2  0
+  012  0  2
+  013  2  0
+  014  2  0
+  015  0  2
+  016  2  0
+  017  0  2
+  018  2  0
+  019  2  0
+
+~~~~~~~~~~~~~~
+lop$nSubj vs Visit:
+     
+      V1 V2
+  001  1  1
+  002  1  1
+  004  1  1
+  005  1  1
+  006  1  1
+  007  1  1
+  008  1  1
+  009  1  1
+  010  1  1
+  011  1  1
+  012  1  1
+  013  1  1
+  014  1  1
+  015  1  1
+  016  1  1
+  017  1  1
+  018  1  1
+  019  1  1
+
+~~~~~~~~~~~~~~
+lop$nSubj vs SideOp:
+     
+      L R
+  001 0 2
+  002 0 2
+  004 2 0
+  005 2 0
+  006 2 0
+  007 2 0
+  008 0 2
+  009 0 2
+  010 0 2
+  011 0 2
+  012 0 2
+  013 2 0
+  014 0 2
+  015 0 2
+  016 2 0
+  017 0 2
+  018 2 0
+  019 2 0
+
+***** End of data structure information *****
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Reading input files now...
+
+Reading input files: Done!
+
+If the program hangs here for more than, for example, half an hour,
+kill the process because the model specification or the GLT coding
+is likely inappropriate.
+
+[1] "Great, test run passed at voxel (16, 31, 25)!"
+[1] "Start to compute 51 slices along Z axis. You can monitor the progress"
+[1] "and estimate the total run time as shown below."
+[1] "07/16/15 02:47:54.871"
+Loading required package: snow
+Package snow loaded successfully!
+
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+Z slice  1 done:  07/16/15 02:48:01.463 
+Z slice  2 done:  07/16/15 02:48:01.943 
+Z slice  3 done:  07/16/15 02:48:02.051 
+Z slice  4 done:  07/16/15 02:48:02.161 
+Z slice  5 done:  07/16/15 02:48:02.306 
+Z slice  6 done:  07/16/15 02:48:04.559 
+Z slice  7 done:  07/16/15 02:48:21.758 
+Z slice  8 done:  07/16/15 02:48:50.068 
+Z slice  9 done:  07/16/15 02:49:29.332 
+Z slice  10 done:  07/16/15 02:50:18.296 
+Z slice  11 done:  07/16/15 02:51:10.196 
+Z slice  12 done:  07/16/15 02:52:03.510 
+Z slice  13 done:  07/16/15 02:52:58.827 
+Z slice  14 done:  07/16/15 02:53:59.304 
+Z slice  15 done:  07/16/15 02:55:01.732 
+Z slice  16 done:  07/16/15 02:56:05.286 
+Z slice  17 done:  07/16/15 02:57:10.466 
+Z slice  18 done:  07/16/15 02:58:16.442 
+Z slice  19 done:  07/16/15 02:59:24.841 
+Z slice  20 done:  07/16/15 03:00:31.875 
+Z slice  21 done:  07/16/15 03:01:39.687 
+Z slice  22 done:  07/16/15 03:02:45.395 
+Z slice  23 done:  07/16/15 03:03:50.232 
+Z slice  24 done:  07/16/15 03:04:55.078 
+Z slice  25 done:  07/16/15 03:06:00.123 
+Z slice  26 done:  07/16/15 03:07:06.253 
+Z slice  27 done:  07/16/15 03:08:11.265 
+Z slice  28 done:  07/16/15 03:09:16.260 
+Z slice  29 done:  07/16/15 03:10:20.602 
+Z slice  30 done:  07/16/15 03:11:23.289 
+Z slice  31 done:  07/16/15 03:12:27.457 
+Z slice  32 done:  07/16/15 03:13:31.620 
+Z slice  33 done:  07/16/15 03:14:36.605 
+Z slice  34 done:  07/16/15 03:15:41.444 
+Z slice  35 done:  07/16/15 03:16:44.431 
+Z slice  36 done:  07/16/15 03:17:49.050 
+Z slice  37 done:  07/16/15 03:18:51.027 
+Z slice  38 done:  07/16/15 03:19:51.757 
+Z slice  39 done:  07/16/15 03:20:52.323 
+Z slice  40 done:  07/16/15 03:21:50.733 
+Z slice  41 done:  07/16/15 03:22:47.598 
+Z slice  42 done:  07/16/15 03:23:41.103 
+Z slice  43 done:  07/16/15 03:24:31.545 
+Z slice  44 done:  07/16/15 03:25:19.308 
+Z slice  45 done:  07/16/15 03:26:03.551 
+Z slice  46 done:  07/16/15 03:26:43.519 
+Z slice  47 done:  07/16/15 03:27:20.572 
+Z slice  48 done:  07/16/15 03:27:51.630 
+Z slice  49 done:  07/16/15 03:28:14.187 
+Z slice  50 done:  07/16/15 03:28:22.715 
+Z slice  51 done:  07/16/15 03:28:22.790 
+
+Congratulations! You have got an output anova_PVIS+tlrc.
+
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+Loading required package: afex
+Loading required package: car
+Loading required package: lme4
+Loading required package: Matrix
+Loading required package: reshape2
+************
+Welcome to afex. Important notes:
+
+Due to popular demand, afex doesn't change the contrasts globally anymore.
+To set contrasts globally to contr.sum run set_sum_contrasts().
+To set contrasts globally to the default (treatment) contrasts run set_default_contrasts().
+
+All afex functions are unaffected by global contrasts and use contr.sum as long as check.contr = TRUE (which is the default).
+************
+Package afex loaded successfully!
+
+Loading required package: phia
+Package phia loaded successfully!
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+***** Summary information of data structure *****
+18 subjects :  001 002 004 005 006 007 008 009 010 011 012 013 014 015 016 017 018 019 
+36 response values
+2 levels for factor Group : G1 G2 
+2 levels for factor Visit : V1 V2 
+2 levels for factor SideOp : L R 
+4 post hoc tests
+
+Contingency tables of subject distributions among the categorical variables:
+
+, , Visit = V1
+
+     SideOp
+Group L R
+   G1 6 5
+   G2 2 5
+
+, , Visit = V2
+
+     SideOp
+Group L R
+   G1 6 5
+   G2 2 5
+
+
+Tabulation of subjects against each of the categorical variables:
+~~~~~~~~~~~~~~
+lop$nSubj vs Group:
+     
+      G1 G2
+  001  2  0
+  002  0  2
+  004  2  0
+  005  0  2
+  006  2  0
+  007  0  2
+  008  0  2
+  009  2  0
+  010  2  0
+  011  2  0
+  012  0  2
+  013  2  0
+  014  2  0
+  015  0  2
+  016  2  0
+  017  0  2
+  018  2  0
+  019  2  0
+
+~~~~~~~~~~~~~~
+lop$nSubj vs Visit:
+     
+      V1 V2
+  001  1  1
+  002  1  1
+  004  1  1
+  005  1  1
+  006  1  1
+  007  1  1
+  008  1  1
+  009  1  1
+  010  1  1
+  011  1  1
+  012  1  1
+  013  1  1
+  014  1  1
+  015  1  1
+  016  1  1
+  017  1  1
+  018  1  1
+  019  1  1
+
+~~~~~~~~~~~~~~
+lop$nSubj vs SideOp:
+     
+      L R
+  001 0 2
+  002 0 2
+  004 2 0
+  005 2 0
+  006 2 0
+  007 2 0
+  008 0 2
+  009 0 2
+  010 0 2
+  011 0 2
+  012 0 2
+  013 2 0
+  014 0 2
+  015 0 2
+  016 2 0
+  017 0 2
+  018 2 0
+  019 2 0
+
+***** End of data structure information *****
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Reading input files now...
+
+Reading input files: Done!
+
+If the program hangs here for more than, for example, half an hour,
+kill the process because the model specification or the GLT coding
+is likely inappropriate.
+
+[1] "Great, test run passed at voxel (16, 31, 25)!"
+[1] "Start to compute 51 slices along Z axis. You can monitor the progress"
+[1] "and estimate the total run time as shown below."
+[1] "07/16/15 03:28:35.798"
+Loading required package: snow
+Package snow loaded successfully!
+
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+Z slice  1 done:  07/16/15 03:28:41.904 
+Z slice  2 done:  07/16/15 03:28:42.394 
+Z slice  3 done:  07/16/15 03:28:42.525 
+Z slice  4 done:  07/16/15 03:28:42.626 
+Z slice  5 done:  07/16/15 03:28:42.731 
+Z slice  6 done:  07/16/15 03:28:44.762 
+Z slice  7 done:  07/16/15 03:29:01.895 
+Z slice  8 done:  07/16/15 03:29:31.100 
+Z slice  9 done:  07/16/15 03:30:09.924 
+Z slice  10 done:  07/16/15 03:30:58.613 
+Z slice  11 done:  07/16/15 03:31:49.809 
+Z slice  12 done:  07/16/15 03:32:43.027 
+Z slice  13 done:  07/16/15 03:33:38.255 
+Z slice  14 done:  07/16/15 03:34:38.725 
+Z slice  15 done:  07/16/15 03:35:40.884 
+Z slice  16 done:  07/16/15 03:36:44.593 
+Z slice  17 done:  07/16/15 03:37:49.607 
+Z slice  18 done:  07/16/15 03:38:55.334 
+Z slice  19 done:  07/16/15 03:40:01.836 
+Z slice  20 done:  07/16/15 03:41:09.010 
+Z slice  21 done:  07/16/15 03:42:16.225 
+Z slice  22 done:  07/16/15 03:43:22.246 
+Z slice  23 done:  07/16/15 03:44:28.196 
+Z slice  24 done:  07/16/15 03:45:34.237 
+Z slice  25 done:  07/16/15 03:46:40.342 
+Z slice  26 done:  07/16/15 03:47:46.773 
+Z slice  27 done:  07/16/15 03:48:50.591 
+Z slice  28 done:  07/16/15 03:49:56.358 
+Z slice  29 done:  07/16/15 03:50:59.509 
+Z slice  30 done:  07/16/15 03:52:02.231 
+Z slice  31 done:  07/16/15 03:53:06.366 
+Z slice  32 done:  07/16/15 03:54:11.257 
+Z slice  33 done:  07/16/15 03:55:14.547 
+Z slice  34 done:  07/16/15 03:56:20.144 
+Z slice  35 done:  07/16/15 03:57:24.669 
+Z slice  36 done:  07/16/15 03:58:28.181 
+Z slice  37 done:  07/16/15 03:59:30.901 
+Z slice  38 done:  07/16/15 04:00:31.472 
+Z slice  39 done:  07/16/15 04:01:31.704 
+Z slice  40 done:  07/16/15 04:02:29.269 
+Z slice  41 done:  07/16/15 04:03:24.767 
+Z slice  42 done:  07/16/15 04:04:18.048 
+Z slice  43 done:  07/16/15 04:05:09.609 
+Z slice  44 done:  07/16/15 04:05:57.774 
+Z slice  45 done:  07/16/15 04:06:41.333 
+Z slice  46 done:  07/16/15 04:07:21.979 
+Z slice  47 done:  07/16/15 04:07:58.509 
+Z slice  48 done:  07/16/15 04:08:28.609 
+Z slice  49 done:  07/16/15 04:08:51.202 
+Z slice  50 done:  07/16/15 04:09:00.028 
+Z slice  51 done:  07/16/15 04:09:00.093 
+
+Congratulations! You have got an output anova_SVIS+tlrc.
+

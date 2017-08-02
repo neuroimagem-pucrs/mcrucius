@@ -1,0 +1,2401 @@
+./segmentation_elderly.sh: line 8: script_directory: command not found
+SUMA_LoadPrepInVol:
+Forming hull.
+SUMA_SurfaceMetrics_eng: Calculating triangle areas ...
+3dSkullStrip: Locating voxels on skull boundary  ...
+3dSkullStrip: Writing skull surface  ...
+++ 3dcopy: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+Center distance of 27.202443 mm
+Padding ...
+++ 3dZeropad: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ output dataset: ./__ats_tmp__ref_MNI_caez_N27_40pad+tlrc.BRIK
+Resampling ...
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+Clipping -0.000100 814.000100 ...
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___rs_NS+tlrc.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp__resamp_NN+tlrc.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp__resamp_edge_art+tlrc.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+Registration (linear final interpolation) ...
+++ 3dWarpDrive: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+RMS[0] = 85.9905 48.4762   ITER = 12/137
+85.9905
+
+Warping has converged.
+
+++ 3dcopy: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 6.746716 degrees from plumb.
+*+ WARNING: Deoblique datasets with 3dWarp before proceeding with other transformations
+Applying brain mask
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 3drename: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ THD_rename_dataset_files: rename __ats_tmp___pad40_NS+orig.HEAD -> __ats_tmp___pad40_NS.skl+orig.HEAD
+++ THD_rename_dataset_files: rename __ats_tmp___pad40_NS+orig.BRIK.gz -> __ats_tmp___pad40_NS.skl+orig.BRIK.gz
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+Unpadding ...
+++ 3dZeropad: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ output dataset: ./__ats_tmp___upad40_NS+orig.BRIK
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___upad40_NS+orig
+*+ WARNING: Changing the space of an ORIG view dataset may cause confusion!
+*+ WARNING:  NIFTI copies will be interpreted as TLRC view (not TLRC space).
+*+ WARNING:  Consider changing the view of the dataset to TLRC view also
+++ 3drefit processed 1 datasets
+Changing view of transformed anatomy
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___upad40_NS+orig.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+Setting parent with 3drefit -wset NS+orig __ats_tmp___upad40_NS+tlrc
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___upad40_NS+tlrc
+++ 3drefit processed 1 datasets
+++ 3drename: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Warning: ignoring +tlrc on new_prefix.
+++ THD_rename_dataset_files: rename __ats_tmp___upad40_NS+tlrc.HEAD -> NS+tlrc.HEAD
+++ THD_rename_dataset_files: rename __ats_tmp___upad40_NS+tlrc.BRIK.gz -> NS+tlrc.BRIK.gz
+Doing the MSB thing...
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 6.746716 degrees from plumb.
+*+ WARNING: Deoblique datasets with 3dWarp before proceeding with other transformations
+Applying brain mask
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 3drename: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ THD_rename_dataset_files: rename NS.Xat.rigid+orig.HEAD -> NS.Xat.rigid.skl+orig.HEAD
+++ THD_rename_dataset_files: rename NS.Xat.rigid+orig.BRIK.gz -> NS.Xat.rigid.skl+orig.BRIK.gz
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset NS.Xat.rigid+orig
+*+ WARNING: Changing the space of an ORIG view dataset may cause confusion!
+*+ WARNING:  NIFTI copies will be interpreted as TLRC view (not TLRC space).
+*+ WARNING:  Consider changing the view of the dataset to TLRC view also
+++ 3drefit processed 1 datasets
+Changing view of rigid_equiv anatomy
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset NS.Xat.rigid+orig.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+Cleanup ...
+++ 3dcopy: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ 3dZcutup: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Output dataset ./ppp_100.nii.gz
+++ 3dOverlap: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ 3dOverlap: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+./segmentation_elderly.sh: line 78: cd: script_directory: No such file or directory
+SUMA_LoadPrepInVol:
+Forming hull.
+SUMA_SurfaceMetrics_eng: Calculating triangle areas ...
+3dSkullStrip: Locating voxels on skull boundary  ...
+3dSkullStrip: Writing skull surface  ...
+++ 3dcopy: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+
+*********** Warning *************
+Dataset centers are 50.115328 mm
+apart. If registration fails, or if
+parts of the original anatomy gets
+cropped, try adding option 
+   -init_xform AUTO_CENTER 
+to your @auto_tlrc command.
+
+*********************************
+
+Padding ...
+++ 3dZeropad: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ output dataset: ./__ats_tmp__ref_MNI_caez_N27_40pad+tlrc.BRIK
+Resampling ...
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+Clipping -0.000100 875.000100 ...
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___rs_NS+tlrc.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp__resamp_NN+tlrc.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp__resamp_edge_art+tlrc.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+Registration (linear final interpolation) ...
+++ 3dWarpDrive: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+RMS[0] = 95.2698 49.8709   ITER = 12/137
+95.2698
+
+Warping has converged.
+
+++ 3dcopy: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 8.660092 degrees from plumb.
+*+ WARNING: Deoblique datasets with 3dWarp before proceeding with other transformations
+Applying brain mask
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 3drename: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ THD_rename_dataset_files: rename __ats_tmp___pad40_NS+orig.HEAD -> __ats_tmp___pad40_NS.skl+orig.HEAD
+++ THD_rename_dataset_files: rename __ats_tmp___pad40_NS+orig.BRIK.gz -> __ats_tmp___pad40_NS.skl+orig.BRIK.gz
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+Unpadding ...
+++ 3dZeropad: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ output dataset: ./__ats_tmp___upad40_NS+orig.BRIK
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___upad40_NS+orig
+*+ WARNING: Changing the space of an ORIG view dataset may cause confusion!
+*+ WARNING:  NIFTI copies will be interpreted as TLRC view (not TLRC space).
+*+ WARNING:  Consider changing the view of the dataset to TLRC view also
+++ 3drefit processed 1 datasets
+Changing view of transformed anatomy
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___upad40_NS+orig.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+Setting parent with 3drefit -wset NS+orig __ats_tmp___upad40_NS+tlrc
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___upad40_NS+tlrc
+++ 3drefit processed 1 datasets
+++ 3drename: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Warning: ignoring +tlrc on new_prefix.
+++ THD_rename_dataset_files: rename __ats_tmp___upad40_NS+tlrc.HEAD -> NS+tlrc.HEAD
+++ THD_rename_dataset_files: rename __ats_tmp___upad40_NS+tlrc.BRIK.gz -> NS+tlrc.BRIK.gz
+Doing the MSB thing...
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 8.660092 degrees from plumb.
+*+ WARNING: Deoblique datasets with 3dWarp before proceeding with other transformations
+Applying brain mask
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 3drename: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ THD_rename_dataset_files: rename NS.Xat.rigid+orig.HEAD -> NS.Xat.rigid.skl+orig.HEAD
+++ THD_rename_dataset_files: rename NS.Xat.rigid+orig.BRIK.gz -> NS.Xat.rigid.skl+orig.BRIK.gz
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset NS.Xat.rigid+orig
+*+ WARNING: Changing the space of an ORIG view dataset may cause confusion!
+*+ WARNING:  NIFTI copies will be interpreted as TLRC view (not TLRC space).
+*+ WARNING:  Consider changing the view of the dataset to TLRC view also
+++ 3drefit processed 1 datasets
+Changing view of rigid_equiv anatomy
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset NS.Xat.rigid+orig.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+Cleanup ...
+++ 3dcopy: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ 3dZcutup: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Output dataset ./ppp_100.nii.gz
+++ 3dOverlap: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ 3dOverlap: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+./segmentation_elderly.sh: line 78: cd: script_directory: No such file or directory
+SUMA_LoadPrepInVol:
+Forming hull.
+SUMA_SurfaceMetrics_eng: Calculating triangle areas ...
+3dSkullStrip: Locating voxels on skull boundary  ...
+3dSkullStrip: Writing skull surface  ...
+++ 3dcopy: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+
+*********** Warning *************
+Dataset centers are 56.945322 mm
+apart. If registration fails, or if
+parts of the original anatomy gets
+cropped, try adding option 
+   -init_xform AUTO_CENTER 
+to your @auto_tlrc command.
+
+*********************************
+
+Padding ...
+++ 3dZeropad: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ output dataset: ./__ats_tmp__ref_MNI_caez_N27_40pad+tlrc.BRIK
+Resampling ...
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+Clipping -0.000100 983.000100 ...
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___rs_NS+tlrc.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp__resamp_NN+tlrc.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp__resamp_edge_art+tlrc.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+Registration (linear final interpolation) ...
+++ 3dWarpDrive: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+RMS[0] = 92.3779 68.7646   ITER = 12/137
+92.3779
+
+Warping has converged.
+
+++ 3dcopy: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 6.549907 degrees from plumb.
+*+ WARNING: Deoblique datasets with 3dWarp before proceeding with other transformations
+Applying brain mask
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 3drename: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ THD_rename_dataset_files: rename __ats_tmp___pad40_NS+orig.HEAD -> __ats_tmp___pad40_NS.skl+orig.HEAD
+++ THD_rename_dataset_files: rename __ats_tmp___pad40_NS+orig.BRIK.gz -> __ats_tmp___pad40_NS.skl+orig.BRIK.gz
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+Unpadding ...
+++ 3dZeropad: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ output dataset: ./__ats_tmp___upad40_NS+orig.BRIK
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___upad40_NS+orig
+*+ WARNING: Changing the space of an ORIG view dataset may cause confusion!
+*+ WARNING:  NIFTI copies will be interpreted as TLRC view (not TLRC space).
+*+ WARNING:  Consider changing the view of the dataset to TLRC view also
+++ 3drefit processed 1 datasets
+Changing view of transformed anatomy
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___upad40_NS+orig.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+Setting parent with 3drefit -wset NS+orig __ats_tmp___upad40_NS+tlrc
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___upad40_NS+tlrc
+++ 3drefit processed 1 datasets
+++ 3drename: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Warning: ignoring +tlrc on new_prefix.
+++ THD_rename_dataset_files: rename __ats_tmp___upad40_NS+tlrc.HEAD -> NS+tlrc.HEAD
+++ THD_rename_dataset_files: rename __ats_tmp___upad40_NS+tlrc.BRIK.gz -> NS+tlrc.BRIK.gz
+Doing the MSB thing...
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 6.549907 degrees from plumb.
+*+ WARNING: Deoblique datasets with 3dWarp before proceeding with other transformations
+Applying brain mask
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 3drename: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ THD_rename_dataset_files: rename NS.Xat.rigid+orig.HEAD -> NS.Xat.rigid.skl+orig.HEAD
+++ THD_rename_dataset_files: rename NS.Xat.rigid+orig.BRIK.gz -> NS.Xat.rigid.skl+orig.BRIK.gz
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset NS.Xat.rigid+orig
+*+ WARNING: Changing the space of an ORIG view dataset may cause confusion!
+*+ WARNING:  NIFTI copies will be interpreted as TLRC view (not TLRC space).
+*+ WARNING:  Consider changing the view of the dataset to TLRC view also
+++ 3drefit processed 1 datasets
+Changing view of rigid_equiv anatomy
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset NS.Xat.rigid+orig.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+Cleanup ...
+++ 3dcopy: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ 3dZcutup: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Output dataset ./ppp_100.nii.gz
+++ 3dOverlap: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ 3dOverlap: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+./segmentation_elderly.sh: line 78: cd: script_directory: No such file or directory
+SUMA_LoadPrepInVol:
+Forming hull.
+SUMA_SurfaceMetrics_eng: Calculating triangle areas ...
+3dSkullStrip: Locating voxels on skull boundary  ...
+3dSkullStrip: Writing skull surface  ...
+++ 3dcopy: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+Center distance of 32.653229 mm
+Padding ...
+++ 3dZeropad: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ output dataset: ./__ats_tmp__ref_MNI_caez_N27_40pad+tlrc.BRIK
+Resampling ...
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+Clipping -0.000100 918.000100 ...
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___rs_NS+tlrc.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp__resamp_NN+tlrc.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp__resamp_edge_art+tlrc.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+Registration (linear final interpolation) ...
+++ 3dWarpDrive: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+RMS[0] = 83.5929 50.6719   ITER = 8/137
+83.5929
+
+Warping has converged.
+
+++ 3dcopy: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 3.242142 degrees from plumb.
+*+ WARNING: Deoblique datasets with 3dWarp before proceeding with other transformations
+Applying brain mask
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 3drename: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ THD_rename_dataset_files: rename __ats_tmp___pad40_NS+orig.HEAD -> __ats_tmp___pad40_NS.skl+orig.HEAD
+++ THD_rename_dataset_files: rename __ats_tmp___pad40_NS+orig.BRIK.gz -> __ats_tmp___pad40_NS.skl+orig.BRIK.gz
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+Unpadding ...
+++ 3dZeropad: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ output dataset: ./__ats_tmp___upad40_NS+orig.BRIK
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___upad40_NS+orig
+*+ WARNING: Changing the space of an ORIG view dataset may cause confusion!
+*+ WARNING:  NIFTI copies will be interpreted as TLRC view (not TLRC space).
+*+ WARNING:  Consider changing the view of the dataset to TLRC view also
+++ 3drefit processed 1 datasets
+Changing view of transformed anatomy
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___upad40_NS+orig.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+Setting parent with 3drefit -wset NS+orig __ats_tmp___upad40_NS+tlrc
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___upad40_NS+tlrc
+++ 3drefit processed 1 datasets
+++ 3drename: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Warning: ignoring +tlrc on new_prefix.
+++ THD_rename_dataset_files: rename __ats_tmp___upad40_NS+tlrc.HEAD -> NS+tlrc.HEAD
+++ THD_rename_dataset_files: rename __ats_tmp___upad40_NS+tlrc.BRIK.gz -> NS+tlrc.BRIK.gz
+Doing the MSB thing...
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 3.242142 degrees from plumb.
+*+ WARNING: Deoblique datasets with 3dWarp before proceeding with other transformations
+Applying brain mask
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 3drename: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ THD_rename_dataset_files: rename NS.Xat.rigid+orig.HEAD -> NS.Xat.rigid.skl+orig.HEAD
+++ THD_rename_dataset_files: rename NS.Xat.rigid+orig.BRIK.gz -> NS.Xat.rigid.skl+orig.BRIK.gz
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset NS.Xat.rigid+orig
+*+ WARNING: Changing the space of an ORIG view dataset may cause confusion!
+*+ WARNING:  NIFTI copies will be interpreted as TLRC view (not TLRC space).
+*+ WARNING:  Consider changing the view of the dataset to TLRC view also
+++ 3drefit processed 1 datasets
+Changing view of rigid_equiv anatomy
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset NS.Xat.rigid+orig.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+Cleanup ...
+++ 3dcopy: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ 3dZcutup: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Output dataset ./ppp_100.nii.gz
+++ 3dOverlap: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ 3dOverlap: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+./segmentation_elderly.sh: line 78: cd: script_directory: No such file or directory
+SUMA_LoadPrepInVol:
+Forming hull.
+SUMA_SurfaceMetrics_eng: Calculating triangle areas ...
+3dSkullStrip: Locating voxels on skull boundary  ...
+3dSkullStrip: Writing skull surface  ...
+++ 3dcopy: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+Center distance of 30.541234 mm
+Padding ...
+++ 3dZeropad: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ output dataset: ./__ats_tmp__ref_MNI_caez_N27_40pad+tlrc.BRIK
+Resampling ...
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+Clipping -0.000100 806.000100 ...
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___rs_NS+tlrc.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp__resamp_NN+tlrc.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp__resamp_edge_art+tlrc.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+Registration (linear final interpolation) ...
+++ 3dWarpDrive: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+RMS[0] = 89.4229 47.8909   ITER = 10/137
+89.4229
+
+Warping has converged.
+
+++ 3dcopy: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 11.371045 degrees from plumb.
+*+ WARNING: Deoblique datasets with 3dWarp before proceeding with other transformations
+Applying brain mask
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 3drename: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ THD_rename_dataset_files: rename __ats_tmp___pad40_NS+orig.HEAD -> __ats_tmp___pad40_NS.skl+orig.HEAD
+++ THD_rename_dataset_files: rename __ats_tmp___pad40_NS+orig.BRIK.gz -> __ats_tmp___pad40_NS.skl+orig.BRIK.gz
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+Unpadding ...
+++ 3dZeropad: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ output dataset: ./__ats_tmp___upad40_NS+orig.BRIK
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___upad40_NS+orig
+*+ WARNING: Changing the space of an ORIG view dataset may cause confusion!
+*+ WARNING:  NIFTI copies will be interpreted as TLRC view (not TLRC space).
+*+ WARNING:  Consider changing the view of the dataset to TLRC view also
+++ 3drefit processed 1 datasets
+Changing view of transformed anatomy
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___upad40_NS+orig.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+Setting parent with 3drefit -wset NS+orig __ats_tmp___upad40_NS+tlrc
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___upad40_NS+tlrc
+++ 3drefit processed 1 datasets
+++ 3drename: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Warning: ignoring +tlrc on new_prefix.
+++ THD_rename_dataset_files: rename __ats_tmp___upad40_NS+tlrc.HEAD -> NS+tlrc.HEAD
+++ THD_rename_dataset_files: rename __ats_tmp___upad40_NS+tlrc.BRIK.gz -> NS+tlrc.BRIK.gz
+Doing the MSB thing...
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 11.371045 degrees from plumb.
+*+ WARNING: Deoblique datasets with 3dWarp before proceeding with other transformations
+Applying brain mask
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 3drename: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ THD_rename_dataset_files: rename NS.Xat.rigid+orig.HEAD -> NS.Xat.rigid.skl+orig.HEAD
+++ THD_rename_dataset_files: rename NS.Xat.rigid+orig.BRIK.gz -> NS.Xat.rigid.skl+orig.BRIK.gz
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset NS.Xat.rigid+orig
+*+ WARNING: Changing the space of an ORIG view dataset may cause confusion!
+*+ WARNING:  NIFTI copies will be interpreted as TLRC view (not TLRC space).
+*+ WARNING:  Consider changing the view of the dataset to TLRC view also
+++ 3drefit processed 1 datasets
+Changing view of rigid_equiv anatomy
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset NS.Xat.rigid+orig.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+Cleanup ...
+++ 3dcopy: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ 3dZcutup: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Output dataset ./ppp_100.nii.gz
+++ 3dOverlap: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ 3dOverlap: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+./segmentation_elderly.sh: line 78: cd: script_directory: No such file or directory
+SUMA_LoadPrepInVol:
+Forming hull.
+SUMA_SurfaceMetrics_eng: Calculating triangle areas ...
+3dSkullStrip: Locating voxels on skull boundary  ...
+3dSkullStrip: Writing skull surface  ...
+++ 3dcopy: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+Center distance of 18.917910 mm
+Padding ...
+++ 3dZeropad: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ output dataset: ./__ats_tmp__ref_MNI_caez_N27_40pad+tlrc.BRIK
+Resampling ...
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+Clipping -0.000100 789.000100 ...
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___rs_NS+tlrc.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp__resamp_NN+tlrc.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp__resamp_edge_art+tlrc.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+Registration (linear final interpolation) ...
+++ 3dWarpDrive: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+RMS[0] = 93.9842 47.4498   ITER = 12/137
+93.9842
+
+Warping has converged.
+
+++ 3dcopy: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 3.324665 degrees from plumb.
+*+ WARNING: Deoblique datasets with 3dWarp before proceeding with other transformations
+Applying brain mask
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 3drename: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ THD_rename_dataset_files: rename __ats_tmp___pad40_NS+orig.HEAD -> __ats_tmp___pad40_NS.skl+orig.HEAD
+++ THD_rename_dataset_files: rename __ats_tmp___pad40_NS+orig.BRIK.gz -> __ats_tmp___pad40_NS.skl+orig.BRIK.gz
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+Unpadding ...
+++ 3dZeropad: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ output dataset: ./__ats_tmp___upad40_NS+orig.BRIK
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___upad40_NS+orig
+*+ WARNING: Changing the space of an ORIG view dataset may cause confusion!
+*+ WARNING:  NIFTI copies will be interpreted as TLRC view (not TLRC space).
+*+ WARNING:  Consider changing the view of the dataset to TLRC view also
+++ 3drefit processed 1 datasets
+Changing view of transformed anatomy
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___upad40_NS+orig.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+Setting parent with 3drefit -wset NS+orig __ats_tmp___upad40_NS+tlrc
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___upad40_NS+tlrc
+++ 3drefit processed 1 datasets
+++ 3drename: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Warning: ignoring +tlrc on new_prefix.
+++ THD_rename_dataset_files: rename __ats_tmp___upad40_NS+tlrc.HEAD -> NS+tlrc.HEAD
+++ THD_rename_dataset_files: rename __ats_tmp___upad40_NS+tlrc.BRIK.gz -> NS+tlrc.BRIK.gz
+Doing the MSB thing...
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 3.324665 degrees from plumb.
+*+ WARNING: Deoblique datasets with 3dWarp before proceeding with other transformations
+Applying brain mask
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 3drename: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ THD_rename_dataset_files: rename NS.Xat.rigid+orig.HEAD -> NS.Xat.rigid.skl+orig.HEAD
+++ THD_rename_dataset_files: rename NS.Xat.rigid+orig.BRIK.gz -> NS.Xat.rigid.skl+orig.BRIK.gz
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset NS.Xat.rigid+orig
+*+ WARNING: Changing the space of an ORIG view dataset may cause confusion!
+*+ WARNING:  NIFTI copies will be interpreted as TLRC view (not TLRC space).
+*+ WARNING:  Consider changing the view of the dataset to TLRC view also
+++ 3drefit processed 1 datasets
+Changing view of rigid_equiv anatomy
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset NS.Xat.rigid+orig.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+Cleanup ...
+++ 3dcopy: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ 3dZcutup: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Output dataset ./ppp_100.nii.gz
+++ 3dOverlap: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ 3dOverlap: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+./segmentation_elderly.sh: line 78: cd: script_directory: No such file or directory
+SUMA_LoadPrepInVol:
+Forming hull.
+SUMA_SurfaceMetrics_eng: Calculating triangle areas ...
+3dSkullStrip: Locating voxels on skull boundary  ...
+3dSkullStrip: Writing skull surface  ...
+++ 3dcopy: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+Center distance of 38.186067 mm
+Padding ...
+++ 3dZeropad: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ output dataset: ./__ats_tmp__ref_MNI_caez_N27_40pad+tlrc.BRIK
+Resampling ...
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+Clipping -0.000100 1014.000100 ...
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___rs_NS+tlrc.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp__resamp_NN+tlrc.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp__resamp_edge_art+tlrc.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+Registration (linear final interpolation) ...
+++ 3dWarpDrive: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+RMS[0] = 88.0858 54.5125   ITER = 12/137
+88.0858
+
+Warping has converged.
+
+++ 3dcopy: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 2.107008 degrees from plumb.
+*+ WARNING: Deoblique datasets with 3dWarp before proceeding with other transformations
+Applying brain mask
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 3drename: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ THD_rename_dataset_files: rename __ats_tmp___pad40_NS+orig.HEAD -> __ats_tmp___pad40_NS.skl+orig.HEAD
+++ THD_rename_dataset_files: rename __ats_tmp___pad40_NS+orig.BRIK.gz -> __ats_tmp___pad40_NS.skl+orig.BRIK.gz
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+Unpadding ...
+++ 3dZeropad: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ output dataset: ./__ats_tmp___upad40_NS+orig.BRIK
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___upad40_NS+orig
+*+ WARNING: Changing the space of an ORIG view dataset may cause confusion!
+*+ WARNING:  NIFTI copies will be interpreted as TLRC view (not TLRC space).
+*+ WARNING:  Consider changing the view of the dataset to TLRC view also
+++ 3drefit processed 1 datasets
+Changing view of transformed anatomy
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___upad40_NS+orig.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+Setting parent with 3drefit -wset NS+orig __ats_tmp___upad40_NS+tlrc
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___upad40_NS+tlrc
+++ 3drefit processed 1 datasets
+++ 3drename: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Warning: ignoring +tlrc on new_prefix.
+++ THD_rename_dataset_files: rename __ats_tmp___upad40_NS+tlrc.HEAD -> NS+tlrc.HEAD
+++ THD_rename_dataset_files: rename __ats_tmp___upad40_NS+tlrc.BRIK.gz -> NS+tlrc.BRIK.gz
+Doing the MSB thing...
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 2.107008 degrees from plumb.
+*+ WARNING: Deoblique datasets with 3dWarp before proceeding with other transformations
+Applying brain mask
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 3drename: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ THD_rename_dataset_files: rename NS.Xat.rigid+orig.HEAD -> NS.Xat.rigid.skl+orig.HEAD
+++ THD_rename_dataset_files: rename NS.Xat.rigid+orig.BRIK.gz -> NS.Xat.rigid.skl+orig.BRIK.gz
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset NS.Xat.rigid+orig
+*+ WARNING: Changing the space of an ORIG view dataset may cause confusion!
+*+ WARNING:  NIFTI copies will be interpreted as TLRC view (not TLRC space).
+*+ WARNING:  Consider changing the view of the dataset to TLRC view also
+++ 3drefit processed 1 datasets
+Changing view of rigid_equiv anatomy
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset NS.Xat.rigid+orig.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+Cleanup ...
+++ 3dcopy: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ 3dZcutup: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Output dataset ./ppp_100.nii.gz
+++ 3dOverlap: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ 3dOverlap: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+./segmentation_elderly.sh: line 78: cd: script_directory: No such file or directory
+SUMA_LoadPrepInVol:
+Forming hull.
+SUMA_SurfaceMetrics_eng: Calculating triangle areas ...
+3dSkullStrip: Locating voxels on skull boundary  ...
+3dSkullStrip: Writing skull surface  ...
+++ 3dcopy: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+Center distance of 37.072561 mm
+Padding ...
+++ 3dZeropad: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ output dataset: ./__ats_tmp__ref_MNI_caez_N27_40pad+tlrc.BRIK
+Resampling ...
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+Clipping -0.000100 835.000100 ...
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___rs_NS+tlrc.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp__resamp_NN+tlrc.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp__resamp_edge_art+tlrc.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+Registration (linear final interpolation) ...
+++ 3dWarpDrive: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+RMS[0] = 88.7407 50.8033   ITER = 12/137
+88.7407
+
+Warping has converged.
+
+++ 3dcopy: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 4.562268 degrees from plumb.
+*+ WARNING: Deoblique datasets with 3dWarp before proceeding with other transformations
+Applying brain mask
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 3drename: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ THD_rename_dataset_files: rename __ats_tmp___pad40_NS+orig.HEAD -> __ats_tmp___pad40_NS.skl+orig.HEAD
+++ THD_rename_dataset_files: rename __ats_tmp___pad40_NS+orig.BRIK.gz -> __ats_tmp___pad40_NS.skl+orig.BRIK.gz
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+Unpadding ...
+++ 3dZeropad: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ output dataset: ./__ats_tmp___upad40_NS+orig.BRIK
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___upad40_NS+orig
+*+ WARNING: Changing the space of an ORIG view dataset may cause confusion!
+*+ WARNING:  NIFTI copies will be interpreted as TLRC view (not TLRC space).
+*+ WARNING:  Consider changing the view of the dataset to TLRC view also
+++ 3drefit processed 1 datasets
+Changing view of transformed anatomy
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___upad40_NS+orig.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+Setting parent with 3drefit -wset NS+orig __ats_tmp___upad40_NS+tlrc
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___upad40_NS+tlrc
+++ 3drefit processed 1 datasets
+++ 3drename: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Warning: ignoring +tlrc on new_prefix.
+++ THD_rename_dataset_files: rename __ats_tmp___upad40_NS+tlrc.HEAD -> NS+tlrc.HEAD
+++ THD_rename_dataset_files: rename __ats_tmp___upad40_NS+tlrc.BRIK.gz -> NS+tlrc.BRIK.gz
+Doing the MSB thing...
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 4.562268 degrees from plumb.
+*+ WARNING: Deoblique datasets with 3dWarp before proceeding with other transformations
+Applying brain mask
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 3drename: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ THD_rename_dataset_files: rename NS.Xat.rigid+orig.HEAD -> NS.Xat.rigid.skl+orig.HEAD
+++ THD_rename_dataset_files: rename NS.Xat.rigid+orig.BRIK.gz -> NS.Xat.rigid.skl+orig.BRIK.gz
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset NS.Xat.rigid+orig
+*+ WARNING: Changing the space of an ORIG view dataset may cause confusion!
+*+ WARNING:  NIFTI copies will be interpreted as TLRC view (not TLRC space).
+*+ WARNING:  Consider changing the view of the dataset to TLRC view also
+++ 3drefit processed 1 datasets
+Changing view of rigid_equiv anatomy
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset NS.Xat.rigid+orig.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+Cleanup ...
+++ 3dcopy: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ 3dZcutup: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Output dataset ./ppp_100.nii.gz
+++ 3dOverlap: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ 3dOverlap: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+./segmentation_elderly.sh: line 78: cd: script_directory: No such file or directory
+SUMA_LoadPrepInVol:
+Forming hull.
+SUMA_SurfaceMetrics_eng: Calculating triangle areas ...
+3dSkullStrip: Locating voxels on skull boundary  ...
+3dSkullStrip: Writing skull surface  ...
+++ 3dcopy: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+Center distance of 23.309861 mm
+Padding ...
+++ 3dZeropad: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ output dataset: ./__ats_tmp__ref_MNI_caez_N27_40pad+tlrc.BRIK
+Resampling ...
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+Clipping -0.000100 768.000100 ...
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___rs_NS+tlrc.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp__resamp_NN+tlrc.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp__resamp_edge_art+tlrc.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+Registration (linear final interpolation) ...
+++ 3dWarpDrive: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+RMS[0] = 84.4589 46.1703   ITER = 12/137
+84.4589
+
+Warping has converged.
+
+++ 3dcopy: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 8.206406 degrees from plumb.
+*+ WARNING: Deoblique datasets with 3dWarp before proceeding with other transformations
+Applying brain mask
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 3drename: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ THD_rename_dataset_files: rename __ats_tmp___pad40_NS+orig.HEAD -> __ats_tmp___pad40_NS.skl+orig.HEAD
+++ THD_rename_dataset_files: rename __ats_tmp___pad40_NS+orig.BRIK.gz -> __ats_tmp___pad40_NS.skl+orig.BRIK.gz
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+Unpadding ...
+++ 3dZeropad: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ output dataset: ./__ats_tmp___upad40_NS+orig.BRIK
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___upad40_NS+orig
+*+ WARNING: Changing the space of an ORIG view dataset may cause confusion!
+*+ WARNING:  NIFTI copies will be interpreted as TLRC view (not TLRC space).
+*+ WARNING:  Consider changing the view of the dataset to TLRC view also
+++ 3drefit processed 1 datasets
+Changing view of transformed anatomy
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___upad40_NS+orig.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+Setting parent with 3drefit -wset NS+orig __ats_tmp___upad40_NS+tlrc
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___upad40_NS+tlrc
+++ 3drefit processed 1 datasets
+++ 3drename: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Warning: ignoring +tlrc on new_prefix.
+++ THD_rename_dataset_files: rename __ats_tmp___upad40_NS+tlrc.HEAD -> NS+tlrc.HEAD
+++ THD_rename_dataset_files: rename __ats_tmp___upad40_NS+tlrc.BRIK.gz -> NS+tlrc.BRIK.gz
+Doing the MSB thing...
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 8.206406 degrees from plumb.
+*+ WARNING: Deoblique datasets with 3dWarp before proceeding with other transformations
+Applying brain mask
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 3drename: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ THD_rename_dataset_files: rename NS.Xat.rigid+orig.HEAD -> NS.Xat.rigid.skl+orig.HEAD
+++ THD_rename_dataset_files: rename NS.Xat.rigid+orig.BRIK.gz -> NS.Xat.rigid.skl+orig.BRIK.gz
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset NS.Xat.rigid+orig
+*+ WARNING: Changing the space of an ORIG view dataset may cause confusion!
+*+ WARNING:  NIFTI copies will be interpreted as TLRC view (not TLRC space).
+*+ WARNING:  Consider changing the view of the dataset to TLRC view also
+++ 3drefit processed 1 datasets
+Changing view of rigid_equiv anatomy
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset NS.Xat.rigid+orig.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+Cleanup ...
+++ 3dcopy: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ 3dZcutup: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Output dataset ./ppp_100.nii.gz
+++ 3dOverlap: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ 3dOverlap: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+./segmentation_elderly.sh: line 78: cd: script_directory: No such file or directory
+SUMA_LoadPrepInVol:
+Forming hull.
+SUMA_SurfaceMetrics_eng: Calculating triangle areas ...
+3dSkullStrip: Locating voxels on skull boundary  ...
+3dSkullStrip: Writing skull surface  ...
+++ 3dcopy: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+Center distance of 24.234681 mm
+Padding ...
+++ 3dZeropad: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ output dataset: ./__ats_tmp__ref_MNI_caez_N27_40pad+tlrc.BRIK
+Resampling ...
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+Clipping -0.000100 760.000100 ...
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___rs_NS+tlrc.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp__resamp_NN+tlrc.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp__resamp_edge_art+tlrc.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+Registration (linear final interpolation) ...
+++ 3dWarpDrive: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+RMS[0] = 96.4378 52.7483   ITER = 12/137
+96.4378
+
+Warping has converged.
+
+++ 3dcopy: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 7.362793 degrees from plumb.
+*+ WARNING: Deoblique datasets with 3dWarp before proceeding with other transformations
+Applying brain mask
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 3drename: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ THD_rename_dataset_files: rename __ats_tmp___pad40_NS+orig.HEAD -> __ats_tmp___pad40_NS.skl+orig.HEAD
+++ THD_rename_dataset_files: rename __ats_tmp___pad40_NS+orig.BRIK.gz -> __ats_tmp___pad40_NS.skl+orig.BRIK.gz
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+Unpadding ...
+++ 3dZeropad: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ output dataset: ./__ats_tmp___upad40_NS+orig.BRIK
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___upad40_NS+orig
+*+ WARNING: Changing the space of an ORIG view dataset may cause confusion!
+*+ WARNING:  NIFTI copies will be interpreted as TLRC view (not TLRC space).
+*+ WARNING:  Consider changing the view of the dataset to TLRC view also
+++ 3drefit processed 1 datasets
+Changing view of transformed anatomy
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___upad40_NS+orig.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+Setting parent with 3drefit -wset NS+orig __ats_tmp___upad40_NS+tlrc
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___upad40_NS+tlrc
+++ 3drefit processed 1 datasets
+++ 3drename: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Warning: ignoring +tlrc on new_prefix.
+++ THD_rename_dataset_files: rename __ats_tmp___upad40_NS+tlrc.HEAD -> NS+tlrc.HEAD
+++ THD_rename_dataset_files: rename __ats_tmp___upad40_NS+tlrc.BRIK.gz -> NS+tlrc.BRIK.gz
+Doing the MSB thing...
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 7.362793 degrees from plumb.
+*+ WARNING: Deoblique datasets with 3dWarp before proceeding with other transformations
+Applying brain mask
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 3drename: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ THD_rename_dataset_files: rename NS.Xat.rigid+orig.HEAD -> NS.Xat.rigid.skl+orig.HEAD
+++ THD_rename_dataset_files: rename NS.Xat.rigid+orig.BRIK.gz -> NS.Xat.rigid.skl+orig.BRIK.gz
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset NS.Xat.rigid+orig
+*+ WARNING: Changing the space of an ORIG view dataset may cause confusion!
+*+ WARNING:  NIFTI copies will be interpreted as TLRC view (not TLRC space).
+*+ WARNING:  Consider changing the view of the dataset to TLRC view also
+++ 3drefit processed 1 datasets
+Changing view of rigid_equiv anatomy
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset NS.Xat.rigid+orig.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+Cleanup ...
+++ 3dcopy: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ 3dZcutup: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Output dataset ./ppp_100.nii.gz
+++ 3dOverlap: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ 3dOverlap: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+./segmentation_elderly.sh: line 78: cd: script_directory: No such file or directory
+SUMA_LoadPrepInVol:
+Forming hull.
+SUMA_SurfaceMetrics_eng: Calculating triangle areas ...
+3dSkullStrip: Locating voxels on skull boundary  ...
+3dSkullStrip: Writing skull surface  ...
+++ 3dcopy: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+Center distance of 25.000701 mm
+Padding ...
+++ 3dZeropad: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ output dataset: ./__ats_tmp__ref_MNI_caez_N27_40pad+tlrc.BRIK
+Resampling ...
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+Clipping -0.000100 1080.000100 ...
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___rs_NS+tlrc.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp__resamp_NN+tlrc.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp__resamp_edge_art+tlrc.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+Registration (linear final interpolation) ...
+++ 3dWarpDrive: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+RMS[0] = 90.8127 50.9243   ITER = 12/137
+90.8127
+
+Warping has converged.
+
+++ 3dcopy: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 3.342753 degrees from plumb.
+*+ WARNING: Deoblique datasets with 3dWarp before proceeding with other transformations
+Applying brain mask
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 3drename: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ THD_rename_dataset_files: rename __ats_tmp___pad40_NS+orig.HEAD -> __ats_tmp___pad40_NS.skl+orig.HEAD
+++ THD_rename_dataset_files: rename __ats_tmp___pad40_NS+orig.BRIK.gz -> __ats_tmp___pad40_NS.skl+orig.BRIK.gz
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+Unpadding ...
+++ 3dZeropad: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ output dataset: ./__ats_tmp___upad40_NS+orig.BRIK
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___upad40_NS+orig
+*+ WARNING: Changing the space of an ORIG view dataset may cause confusion!
+*+ WARNING:  NIFTI copies will be interpreted as TLRC view (not TLRC space).
+*+ WARNING:  Consider changing the view of the dataset to TLRC view also
+++ 3drefit processed 1 datasets
+Changing view of transformed anatomy
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___upad40_NS+orig.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+Setting parent with 3drefit -wset NS+orig __ats_tmp___upad40_NS+tlrc
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___upad40_NS+tlrc
+++ 3drefit processed 1 datasets
+++ 3drename: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Warning: ignoring +tlrc on new_prefix.
+++ THD_rename_dataset_files: rename __ats_tmp___upad40_NS+tlrc.HEAD -> NS+tlrc.HEAD
+++ THD_rename_dataset_files: rename __ats_tmp___upad40_NS+tlrc.BRIK.gz -> NS+tlrc.BRIK.gz
+Doing the MSB thing...
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 3.342753 degrees from plumb.
+*+ WARNING: Deoblique datasets with 3dWarp before proceeding with other transformations
+Applying brain mask
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 3drename: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ THD_rename_dataset_files: rename NS.Xat.rigid+orig.HEAD -> NS.Xat.rigid.skl+orig.HEAD
+++ THD_rename_dataset_files: rename NS.Xat.rigid+orig.BRIK.gz -> NS.Xat.rigid.skl+orig.BRIK.gz
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset NS.Xat.rigid+orig
+*+ WARNING: Changing the space of an ORIG view dataset may cause confusion!
+*+ WARNING:  NIFTI copies will be interpreted as TLRC view (not TLRC space).
+*+ WARNING:  Consider changing the view of the dataset to TLRC view also
+++ 3drefit processed 1 datasets
+Changing view of rigid_equiv anatomy
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset NS.Xat.rigid+orig.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+Cleanup ...
+++ 3dcopy: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ 3dZcutup: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Output dataset ./ppp_100.nii.gz
+++ 3dOverlap: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ 3dOverlap: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+./segmentation_elderly.sh: line 78: cd: script_directory: No such file or directory
+SUMA_LoadPrepInVol:
+Forming hull.
+SUMA_SurfaceMetrics_eng: Calculating triangle areas ...
+3dSkullStrip: Locating voxels on skull boundary  ...
+3dSkullStrip: Writing skull surface  ...
+++ 3dcopy: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+
+*********** Warning *************
+Dataset centers are 43.953872 mm
+apart. If registration fails, or if
+parts of the original anatomy gets
+cropped, try adding option 
+   -init_xform AUTO_CENTER 
+to your @auto_tlrc command.
+
+*********************************
+
+Padding ...
+++ 3dZeropad: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ output dataset: ./__ats_tmp__ref_MNI_caez_N27_40pad+tlrc.BRIK
+Resampling ...
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+Clipping -0.000100 795.000100 ...
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___rs_NS+tlrc.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp__resamp_NN+tlrc.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp__resamp_edge_art+tlrc.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+Registration (linear final interpolation) ...
+++ 3dWarpDrive: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+RMS[0] = 97.127 55.0195   ITER = 7/137
+97.127
+
+Warping has converged.
+
+++ 3dcopy: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 7.598714 degrees from plumb.
+*+ WARNING: Deoblique datasets with 3dWarp before proceeding with other transformations
+Applying brain mask
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 3drename: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ THD_rename_dataset_files: rename __ats_tmp___pad40_NS+orig.HEAD -> __ats_tmp___pad40_NS.skl+orig.HEAD
+++ THD_rename_dataset_files: rename __ats_tmp___pad40_NS+orig.BRIK.gz -> __ats_tmp___pad40_NS.skl+orig.BRIK.gz
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+Unpadding ...
+++ 3dZeropad: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ output dataset: ./__ats_tmp___upad40_NS+orig.BRIK
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___upad40_NS+orig
+*+ WARNING: Changing the space of an ORIG view dataset may cause confusion!
+*+ WARNING:  NIFTI copies will be interpreted as TLRC view (not TLRC space).
+*+ WARNING:  Consider changing the view of the dataset to TLRC view also
+++ 3drefit processed 1 datasets
+Changing view of transformed anatomy
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___upad40_NS+orig.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+Setting parent with 3drefit -wset NS+orig __ats_tmp___upad40_NS+tlrc
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___upad40_NS+tlrc
+++ 3drefit processed 1 datasets
+++ 3drename: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Warning: ignoring +tlrc on new_prefix.
+++ THD_rename_dataset_files: rename __ats_tmp___upad40_NS+tlrc.HEAD -> NS+tlrc.HEAD
+++ THD_rename_dataset_files: rename __ats_tmp___upad40_NS+tlrc.BRIK.gz -> NS+tlrc.BRIK.gz
+Doing the MSB thing...
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 7.598714 degrees from plumb.
+*+ WARNING: Deoblique datasets with 3dWarp before proceeding with other transformations
+Applying brain mask
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 3drename: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ THD_rename_dataset_files: rename NS.Xat.rigid+orig.HEAD -> NS.Xat.rigid.skl+orig.HEAD
+++ THD_rename_dataset_files: rename NS.Xat.rigid+orig.BRIK.gz -> NS.Xat.rigid.skl+orig.BRIK.gz
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset NS.Xat.rigid+orig
+*+ WARNING: Changing the space of an ORIG view dataset may cause confusion!
+*+ WARNING:  NIFTI copies will be interpreted as TLRC view (not TLRC space).
+*+ WARNING:  Consider changing the view of the dataset to TLRC view also
+++ 3drefit processed 1 datasets
+Changing view of rigid_equiv anatomy
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset NS.Xat.rigid+orig.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+Cleanup ...
+++ 3dcopy: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ 3dZcutup: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Output dataset ./ppp_100.nii.gz
+++ 3dOverlap: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ 3dOverlap: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+./segmentation_elderly.sh: line 78: cd: script_directory: No such file or directory
+SUMA_LoadPrepInVol:
+Forming hull.
+SUMA_SurfaceMetrics_eng: Calculating triangle areas ...
+3dSkullStrip: Locating voxels on skull boundary  ...
+3dSkullStrip: Writing skull surface  ...
+++ 3dcopy: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+Center distance of 18.272144 mm
+Padding ...
+++ 3dZeropad: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ output dataset: ./__ats_tmp__ref_MNI_caez_N27_40pad+tlrc.BRIK
+Resampling ...
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+Clipping -0.000100 774.000100 ...
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___rs_NS+tlrc.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp__resamp_NN+tlrc.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp__resamp_edge_art+tlrc.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+Registration (linear final interpolation) ...
+++ 3dWarpDrive: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+RMS[0] = 91.9153 48.6628   ITER = 12/137
+91.9153
+
+Warping has converged.
+
+++ 3dcopy: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 7.490800 degrees from plumb.
+*+ WARNING: Deoblique datasets with 3dWarp before proceeding with other transformations
+Applying brain mask
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 3drename: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ THD_rename_dataset_files: rename __ats_tmp___pad40_NS+orig.HEAD -> __ats_tmp___pad40_NS.skl+orig.HEAD
+++ THD_rename_dataset_files: rename __ats_tmp___pad40_NS+orig.BRIK.gz -> __ats_tmp___pad40_NS.skl+orig.BRIK.gz
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+Unpadding ...
+++ 3dZeropad: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ output dataset: ./__ats_tmp___upad40_NS+orig.BRIK
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___upad40_NS+orig
+*+ WARNING: Changing the space of an ORIG view dataset may cause confusion!
+*+ WARNING:  NIFTI copies will be interpreted as TLRC view (not TLRC space).
+*+ WARNING:  Consider changing the view of the dataset to TLRC view also
+++ 3drefit processed 1 datasets
+Changing view of transformed anatomy
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___upad40_NS+orig.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+Setting parent with 3drefit -wset NS+orig __ats_tmp___upad40_NS+tlrc
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___upad40_NS+tlrc
+++ 3drefit processed 1 datasets
+++ 3drename: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Warning: ignoring +tlrc on new_prefix.
+++ THD_rename_dataset_files: rename __ats_tmp___upad40_NS+tlrc.HEAD -> NS+tlrc.HEAD
+++ THD_rename_dataset_files: rename __ats_tmp___upad40_NS+tlrc.BRIK.gz -> NS+tlrc.BRIK.gz
+Doing the MSB thing...
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 7.490800 degrees from plumb.
+*+ WARNING: Deoblique datasets with 3dWarp before proceeding with other transformations
+Applying brain mask
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 3drename: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ THD_rename_dataset_files: rename NS.Xat.rigid+orig.HEAD -> NS.Xat.rigid.skl+orig.HEAD
+++ THD_rename_dataset_files: rename NS.Xat.rigid+orig.BRIK.gz -> NS.Xat.rigid.skl+orig.BRIK.gz
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset NS.Xat.rigid+orig
+*+ WARNING: Changing the space of an ORIG view dataset may cause confusion!
+*+ WARNING:  NIFTI copies will be interpreted as TLRC view (not TLRC space).
+*+ WARNING:  Consider changing the view of the dataset to TLRC view also
+++ 3drefit processed 1 datasets
+Changing view of rigid_equiv anatomy
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset NS.Xat.rigid+orig.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+Cleanup ...
+++ 3dcopy: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ 3dZcutup: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Output dataset ./ppp_100.nii.gz
+++ 3dOverlap: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ 3dOverlap: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+./segmentation_elderly.sh: line 78: cd: script_directory: No such file or directory
+SUMA_LoadPrepInVol:
+Forming hull.
+SUMA_SurfaceMetrics_eng: Calculating triangle areas ...
+3dSkullStrip: Locating voxels on skull boundary  ...
+3dSkullStrip: Writing skull surface  ...
+++ 3dcopy: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+
+*********** Warning *************
+Dataset centers are 47.786281 mm
+apart. If registration fails, or if
+parts of the original anatomy gets
+cropped, try adding option 
+   -init_xform AUTO_CENTER 
+to your @auto_tlrc command.
+
+*********************************
+
+Padding ...
+++ 3dZeropad: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ output dataset: ./__ats_tmp__ref_MNI_caez_N27_40pad+tlrc.BRIK
+Resampling ...
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+Clipping -0.000100 807.000100 ...
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___rs_NS+tlrc.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp__resamp_NN+tlrc.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp__resamp_edge_art+tlrc.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+Registration (linear final interpolation) ...
+++ 3dWarpDrive: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+RMS[0] = 99.0859 48.342   ITER = 12/137
+99.0859
+
+Warping has converged.
+
+++ 3dcopy: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 9.365232 degrees from plumb.
+*+ WARNING: Deoblique datasets with 3dWarp before proceeding with other transformations
+Applying brain mask
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 3drename: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ THD_rename_dataset_files: rename __ats_tmp___pad40_NS+orig.HEAD -> __ats_tmp___pad40_NS.skl+orig.HEAD
+++ THD_rename_dataset_files: rename __ats_tmp___pad40_NS+orig.BRIK.gz -> __ats_tmp___pad40_NS.skl+orig.BRIK.gz
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+Unpadding ...
+++ 3dZeropad: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ output dataset: ./__ats_tmp___upad40_NS+orig.BRIK
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___upad40_NS+orig
+*+ WARNING: Changing the space of an ORIG view dataset may cause confusion!
+*+ WARNING:  NIFTI copies will be interpreted as TLRC view (not TLRC space).
+*+ WARNING:  Consider changing the view of the dataset to TLRC view also
+++ 3drefit processed 1 datasets
+Changing view of transformed anatomy
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___upad40_NS+orig.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+Setting parent with 3drefit -wset NS+orig __ats_tmp___upad40_NS+tlrc
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___upad40_NS+tlrc
+++ 3drefit processed 1 datasets
+++ 3drename: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Warning: ignoring +tlrc on new_prefix.
+++ THD_rename_dataset_files: rename __ats_tmp___upad40_NS+tlrc.HEAD -> NS+tlrc.HEAD
+++ THD_rename_dataset_files: rename __ats_tmp___upad40_NS+tlrc.BRIK.gz -> NS+tlrc.BRIK.gz
+Doing the MSB thing...
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 9.365232 degrees from plumb.
+*+ WARNING: Deoblique datasets with 3dWarp before proceeding with other transformations
+Applying brain mask
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 3drename: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ THD_rename_dataset_files: rename NS.Xat.rigid+orig.HEAD -> NS.Xat.rigid.skl+orig.HEAD
+++ THD_rename_dataset_files: rename NS.Xat.rigid+orig.BRIK.gz -> NS.Xat.rigid.skl+orig.BRIK.gz
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset NS.Xat.rigid+orig
+*+ WARNING: Changing the space of an ORIG view dataset may cause confusion!
+*+ WARNING:  NIFTI copies will be interpreted as TLRC view (not TLRC space).
+*+ WARNING:  Consider changing the view of the dataset to TLRC view also
+++ 3drefit processed 1 datasets
+Changing view of rigid_equiv anatomy
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset NS.Xat.rigid+orig.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+Cleanup ...
+++ 3dcopy: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ 3dZcutup: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Output dataset ./ppp_100.nii.gz
+++ 3dOverlap: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ 3dOverlap: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+./segmentation_elderly.sh: line 78: cd: script_directory: No such file or directory
+SUMA_LoadPrepInVol:
+Forming hull.
+SUMA_SurfaceMetrics_eng: Calculating triangle areas ...
+3dSkullStrip: Locating voxels on skull boundary  ...
+3dSkullStrip: Writing skull surface  ...
+++ 3dcopy: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+
+*********** Warning *************
+Dataset centers are 40.727817 mm
+apart. If registration fails, or if
+parts of the original anatomy gets
+cropped, try adding option 
+   -init_xform AUTO_CENTER 
+to your @auto_tlrc command.
+
+*********************************
+
+Padding ...
+++ 3dZeropad: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ output dataset: ./__ats_tmp__ref_MNI_caez_N27_40pad+tlrc.BRIK
+Resampling ...
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+Clipping -0.000100 1054.000100 ...
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___rs_NS+tlrc.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp__resamp_NN+tlrc.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp__resamp_edge_art+tlrc.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+Registration (linear final interpolation) ...
+++ 3dWarpDrive: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+RMS[0] = 85.419 51.89   ITER = 12/137
+85.419
+
+Warping has converged.
+
+++ 3dcopy: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 1.053877 degrees from plumb.
+*+ WARNING: Deoblique datasets with 3dWarp before proceeding with other transformations
+Applying brain mask
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 3drename: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ THD_rename_dataset_files: rename __ats_tmp___pad40_NS+orig.HEAD -> __ats_tmp___pad40_NS.skl+orig.HEAD
+++ THD_rename_dataset_files: rename __ats_tmp___pad40_NS+orig.BRIK.gz -> __ats_tmp___pad40_NS.skl+orig.BRIK.gz
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+Unpadding ...
+++ 3dZeropad: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ output dataset: ./__ats_tmp___upad40_NS+orig.BRIK
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___upad40_NS+orig
+*+ WARNING: Changing the space of an ORIG view dataset may cause confusion!
+*+ WARNING:  NIFTI copies will be interpreted as TLRC view (not TLRC space).
+*+ WARNING:  Consider changing the view of the dataset to TLRC view also
+++ 3drefit processed 1 datasets
+Changing view of transformed anatomy
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___upad40_NS+orig.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+Setting parent with 3drefit -wset NS+orig __ats_tmp___upad40_NS+tlrc
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___upad40_NS+tlrc
+++ 3drefit processed 1 datasets
+++ 3drename: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Warning: ignoring +tlrc on new_prefix.
+++ THD_rename_dataset_files: rename __ats_tmp___upad40_NS+tlrc.HEAD -> NS+tlrc.HEAD
+++ THD_rename_dataset_files: rename __ats_tmp___upad40_NS+tlrc.BRIK.gz -> NS+tlrc.BRIK.gz
+Doing the MSB thing...
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 1.053877 degrees from plumb.
+*+ WARNING: Deoblique datasets with 3dWarp before proceeding with other transformations
+Applying brain mask
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 3drename: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ THD_rename_dataset_files: rename NS.Xat.rigid+orig.HEAD -> NS.Xat.rigid.skl+orig.HEAD
+++ THD_rename_dataset_files: rename NS.Xat.rigid+orig.BRIK.gz -> NS.Xat.rigid.skl+orig.BRIK.gz
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset NS.Xat.rigid+orig
+*+ WARNING: Changing the space of an ORIG view dataset may cause confusion!
+*+ WARNING:  NIFTI copies will be interpreted as TLRC view (not TLRC space).
+*+ WARNING:  Consider changing the view of the dataset to TLRC view also
+++ 3drefit processed 1 datasets
+Changing view of rigid_equiv anatomy
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset NS.Xat.rigid+orig.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+Cleanup ...
+++ 3dcopy: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ 3dZcutup: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Output dataset ./ppp_100.nii.gz
+++ 3dOverlap: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ 3dOverlap: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+./segmentation_elderly.sh: line 78: cd: script_directory: No such file or directory
+SUMA_LoadPrepInVol:
+Forming hull.
+SUMA_SurfaceMetrics_eng: Calculating triangle areas ...
+3dSkullStrip: Locating voxels on skull boundary  ...
+3dSkullStrip: Writing skull surface  ...
+++ 3dcopy: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+
+*********** Warning *************
+Dataset centers are 76.552720 mm
+apart. If registration fails, or if
+parts of the original anatomy gets
+cropped, try adding option 
+   -init_xform AUTO_CENTER 
+to your @auto_tlrc command.
+
+*********************************
+
+Padding ...
+++ 3dZeropad: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ output dataset: ./__ats_tmp__ref_MNI_caez_N27_40pad+tlrc.BRIK
+Resampling ...
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+Clipping -0.000100 935.000100 ...
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___rs_NS+tlrc.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp__resamp_NN+tlrc.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp__resamp_edge_art+tlrc.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+Registration (linear final interpolation) ...
+++ 3dWarpDrive: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+RMS[0] = 111.808 50.4134   ITER = 12/137
+111.808
+
+Warping has converged.
+
+++ 3dcopy: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 8.483389 degrees from plumb.
+*+ WARNING: Deoblique datasets with 3dWarp before proceeding with other transformations
+Applying brain mask
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 3drename: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ THD_rename_dataset_files: rename __ats_tmp___pad40_NS+orig.HEAD -> __ats_tmp___pad40_NS.skl+orig.HEAD
+++ THD_rename_dataset_files: rename __ats_tmp___pad40_NS+orig.BRIK.gz -> __ats_tmp___pad40_NS.skl+orig.BRIK.gz
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+Unpadding ...
+++ 3dZeropad: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ output dataset: ./__ats_tmp___upad40_NS+orig.BRIK
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___upad40_NS+orig
+*+ WARNING: Changing the space of an ORIG view dataset may cause confusion!
+*+ WARNING:  NIFTI copies will be interpreted as TLRC view (not TLRC space).
+*+ WARNING:  Consider changing the view of the dataset to TLRC view also
+++ 3drefit processed 1 datasets
+Changing view of transformed anatomy
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___upad40_NS+orig.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+Setting parent with 3drefit -wset NS+orig __ats_tmp___upad40_NS+tlrc
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___upad40_NS+tlrc
+++ 3drefit processed 1 datasets
+++ 3drename: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Warning: ignoring +tlrc on new_prefix.
+++ THD_rename_dataset_files: rename __ats_tmp___upad40_NS+tlrc.HEAD -> NS+tlrc.HEAD
+++ THD_rename_dataset_files: rename __ats_tmp___upad40_NS+tlrc.BRIK.gz -> NS+tlrc.BRIK.gz
+Doing the MSB thing...
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 8.483389 degrees from plumb.
+*+ WARNING: Deoblique datasets with 3dWarp before proceeding with other transformations
+Applying brain mask
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 3drename: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ THD_rename_dataset_files: rename NS.Xat.rigid+orig.HEAD -> NS.Xat.rigid.skl+orig.HEAD
+++ THD_rename_dataset_files: rename NS.Xat.rigid+orig.BRIK.gz -> NS.Xat.rigid.skl+orig.BRIK.gz
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset NS.Xat.rigid+orig
+*+ WARNING: Changing the space of an ORIG view dataset may cause confusion!
+*+ WARNING:  NIFTI copies will be interpreted as TLRC view (not TLRC space).
+*+ WARNING:  Consider changing the view of the dataset to TLRC view also
+++ 3drefit processed 1 datasets
+Changing view of rigid_equiv anatomy
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset NS.Xat.rigid+orig.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+Cleanup ...
+++ 3dcopy: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ 3dZcutup: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Output dataset ./ppp_100.nii.gz
+++ 3dOverlap: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ 3dOverlap: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+./segmentation_elderly.sh: line 78: cd: script_directory: No such file or directory
+SUMA_LoadPrepInVol:
+Forming hull.
+SUMA_SurfaceMetrics_eng: Calculating triangle areas ...
+3dSkullStrip: Locating voxels on skull boundary  ...
+3dSkullStrip: Writing skull surface  ...
+++ 3dcopy: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+
+*********** Warning *************
+Dataset centers are 65.052544 mm
+apart. If registration fails, or if
+parts of the original anatomy gets
+cropped, try adding option 
+   -init_xform AUTO_CENTER 
+to your @auto_tlrc command.
+
+*********************************
+
+Padding ...
+++ 3dZeropad: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ output dataset: ./__ats_tmp__ref_MNI_caez_N27_40pad+tlrc.BRIK
+Resampling ...
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+Clipping -0.000100 895.000100 ...
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___rs_NS+tlrc.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp__resamp_NN+tlrc.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp__resamp_edge_art+tlrc.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+Registration (linear final interpolation) ...
+++ 3dWarpDrive: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+RMS[0] = 98.3594 54.2659   ITER = 12/137
+98.3594
+
+Warping has converged.
+
+++ 3dcopy: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 4.828969 degrees from plumb.
+*+ WARNING: Deoblique datasets with 3dWarp before proceeding with other transformations
+Applying brain mask
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 3drename: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ THD_rename_dataset_files: rename __ats_tmp___pad40_NS+orig.HEAD -> __ats_tmp___pad40_NS.skl+orig.HEAD
+++ THD_rename_dataset_files: rename __ats_tmp___pad40_NS+orig.BRIK.gz -> __ats_tmp___pad40_NS.skl+orig.BRIK.gz
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+Unpadding ...
+++ 3dZeropad: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ output dataset: ./__ats_tmp___upad40_NS+orig.BRIK
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___upad40_NS+orig
+*+ WARNING: Changing the space of an ORIG view dataset may cause confusion!
+*+ WARNING:  NIFTI copies will be interpreted as TLRC view (not TLRC space).
+*+ WARNING:  Consider changing the view of the dataset to TLRC view also
+++ 3drefit processed 1 datasets
+Changing view of transformed anatomy
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___upad40_NS+orig.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+Setting parent with 3drefit -wset NS+orig __ats_tmp___upad40_NS+tlrc
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___upad40_NS+tlrc
+++ 3drefit processed 1 datasets
+++ 3drename: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Warning: ignoring +tlrc on new_prefix.
+++ THD_rename_dataset_files: rename __ats_tmp___upad40_NS+tlrc.HEAD -> NS+tlrc.HEAD
+++ THD_rename_dataset_files: rename __ats_tmp___upad40_NS+tlrc.BRIK.gz -> NS+tlrc.BRIK.gz
+Doing the MSB thing...
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 4.828969 degrees from plumb.
+*+ WARNING: Deoblique datasets with 3dWarp before proceeding with other transformations
+Applying brain mask
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 3drename: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ THD_rename_dataset_files: rename NS.Xat.rigid+orig.HEAD -> NS.Xat.rigid.skl+orig.HEAD
+++ THD_rename_dataset_files: rename NS.Xat.rigid+orig.BRIK.gz -> NS.Xat.rigid.skl+orig.BRIK.gz
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset NS.Xat.rigid+orig
+*+ WARNING: Changing the space of an ORIG view dataset may cause confusion!
+*+ WARNING:  NIFTI copies will be interpreted as TLRC view (not TLRC space).
+*+ WARNING:  Consider changing the view of the dataset to TLRC view also
+++ 3drefit processed 1 datasets
+Changing view of rigid_equiv anatomy
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset NS.Xat.rigid+orig.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+Cleanup ...
+++ 3dcopy: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ 3dZcutup: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Output dataset ./ppp_100.nii.gz
+++ 3dOverlap: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ 3dOverlap: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+./segmentation_elderly.sh: line 78: cd: script_directory: No such file or directory
+SUMA_LoadPrepInVol:
+Forming hull.
+SUMA_SurfaceMetrics_eng: Calculating triangle areas ...
+3dSkullStrip: Locating voxels on skull boundary  ...
+3dSkullStrip: Writing skull surface  ...
+++ 3dcopy: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+Center distance of 37.966880 mm
+Padding ...
+++ 3dZeropad: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ output dataset: ./__ats_tmp__ref_MNI_caez_N27_40pad+tlrc.BRIK
+Resampling ...
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+Clipping -0.000100 732.000100 ...
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___rs_NS+tlrc.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp__resamp_NN+tlrc.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp__resamp_edge_art+tlrc.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+Registration (linear final interpolation) ...
+++ 3dWarpDrive: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+RMS[0] = 87.6607 46.9376   ITER = 10/137
+87.6607
+
+Warping has converged.
+
+++ 3dcopy: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 2.205490 degrees from plumb.
+*+ WARNING: Deoblique datasets with 3dWarp before proceeding with other transformations
+Applying brain mask
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 3drename: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ THD_rename_dataset_files: rename __ats_tmp___pad40_NS+orig.HEAD -> __ats_tmp___pad40_NS.skl+orig.HEAD
+++ THD_rename_dataset_files: rename __ats_tmp___pad40_NS+orig.BRIK.gz -> __ats_tmp___pad40_NS.skl+orig.BRIK.gz
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+Unpadding ...
+++ 3dZeropad: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ output dataset: ./__ats_tmp___upad40_NS+orig.BRIK
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___upad40_NS+orig
+*+ WARNING: Changing the space of an ORIG view dataset may cause confusion!
+*+ WARNING:  NIFTI copies will be interpreted as TLRC view (not TLRC space).
+*+ WARNING:  Consider changing the view of the dataset to TLRC view also
+++ 3drefit processed 1 datasets
+Changing view of transformed anatomy
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___upad40_NS+orig.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+Setting parent with 3drefit -wset NS+orig __ats_tmp___upad40_NS+tlrc
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___upad40_NS+tlrc
+++ 3drefit processed 1 datasets
+++ 3drename: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Warning: ignoring +tlrc on new_prefix.
+++ THD_rename_dataset_files: rename __ats_tmp___upad40_NS+tlrc.HEAD -> NS+tlrc.HEAD
+++ THD_rename_dataset_files: rename __ats_tmp___upad40_NS+tlrc.BRIK.gz -> NS+tlrc.BRIK.gz
+Doing the MSB thing...
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 2.205490 degrees from plumb.
+*+ WARNING: Deoblique datasets with 3dWarp before proceeding with other transformations
+Applying brain mask
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 3drename: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ THD_rename_dataset_files: rename NS.Xat.rigid+orig.HEAD -> NS.Xat.rigid.skl+orig.HEAD
+++ THD_rename_dataset_files: rename NS.Xat.rigid+orig.BRIK.gz -> NS.Xat.rigid.skl+orig.BRIK.gz
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset NS.Xat.rigid+orig
+*+ WARNING: Changing the space of an ORIG view dataset may cause confusion!
+*+ WARNING:  NIFTI copies will be interpreted as TLRC view (not TLRC space).
+*+ WARNING:  Consider changing the view of the dataset to TLRC view also
+++ 3drefit processed 1 datasets
+Changing view of rigid_equiv anatomy
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset NS.Xat.rigid+orig.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+Cleanup ...
+++ 3dcopy: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ 3dZcutup: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Output dataset ./ppp_100.nii.gz
+++ 3dOverlap: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ 3dOverlap: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+./segmentation_elderly.sh: line 78: cd: script_directory: No such file or directory
+SUMA_LoadPrepInVol:
+Forming hull.
+SUMA_SurfaceMetrics_eng: Calculating triangle areas ...
+3dSkullStrip: Locating voxels on skull boundary  ...
+3dSkullStrip: Writing skull surface  ...
+++ 3dcopy: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+Center distance of 37.092342 mm
+Padding ...
+++ 3dZeropad: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ output dataset: ./__ats_tmp__ref_MNI_caez_N27_40pad+tlrc.BRIK
+Resampling ...
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+Clipping -0.000100 1150.000100 ...
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___rs_NS+tlrc.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp__resamp_NN+tlrc.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp__resamp_edge_art+tlrc.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+Registration (linear final interpolation) ...
+++ 3dWarpDrive: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+RMS[0] = 102.221 48.5834   ITER = 12/137
+102.221
+
+Warping has converged.
+
+++ 3dcopy: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 7.400591 degrees from plumb.
+*+ WARNING: Deoblique datasets with 3dWarp before proceeding with other transformations
+Applying brain mask
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 3drename: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ THD_rename_dataset_files: rename __ats_tmp___pad40_NS+orig.HEAD -> __ats_tmp___pad40_NS.skl+orig.HEAD
+++ THD_rename_dataset_files: rename __ats_tmp___pad40_NS+orig.BRIK.gz -> __ats_tmp___pad40_NS.skl+orig.BRIK.gz
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+Unpadding ...
+++ 3dZeropad: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ output dataset: ./__ats_tmp___upad40_NS+orig.BRIK
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___upad40_NS+orig
+*+ WARNING: Changing the space of an ORIG view dataset may cause confusion!
+*+ WARNING:  NIFTI copies will be interpreted as TLRC view (not TLRC space).
+*+ WARNING:  Consider changing the view of the dataset to TLRC view also
+++ 3drefit processed 1 datasets
+Changing view of transformed anatomy
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___upad40_NS+orig.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+Setting parent with 3drefit -wset NS+orig __ats_tmp___upad40_NS+tlrc
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___upad40_NS+tlrc
+++ 3drefit processed 1 datasets
+++ 3drename: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Warning: ignoring +tlrc on new_prefix.
+++ THD_rename_dataset_files: rename __ats_tmp___upad40_NS+tlrc.HEAD -> NS+tlrc.HEAD
+++ THD_rename_dataset_files: rename __ats_tmp___upad40_NS+tlrc.BRIK.gz -> NS+tlrc.BRIK.gz
+Doing the MSB thing...
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 7.400591 degrees from plumb.
+*+ WARNING: Deoblique datasets with 3dWarp before proceeding with other transformations
+Applying brain mask
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 3drename: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ THD_rename_dataset_files: rename NS.Xat.rigid+orig.HEAD -> NS.Xat.rigid.skl+orig.HEAD
+++ THD_rename_dataset_files: rename NS.Xat.rigid+orig.BRIK.gz -> NS.Xat.rigid.skl+orig.BRIK.gz
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset NS.Xat.rigid+orig
+*+ WARNING: Changing the space of an ORIG view dataset may cause confusion!
+*+ WARNING:  NIFTI copies will be interpreted as TLRC view (not TLRC space).
+*+ WARNING:  Consider changing the view of the dataset to TLRC view also
+++ 3drefit processed 1 datasets
+Changing view of rigid_equiv anatomy
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset NS.Xat.rigid+orig.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+Cleanup ...
+++ 3dcopy: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ 3dZcutup: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Output dataset ./ppp_100.nii.gz
+++ 3dOverlap: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ 3dOverlap: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+./segmentation_elderly.sh: line 78: cd: script_directory: No such file or directory
+SUMA_LoadPrepInVol:
+Forming hull.
+SUMA_SurfaceMetrics_eng: Calculating triangle areas ...
+3dSkullStrip: Locating voxels on skull boundary  ...
+3dSkullStrip: Writing skull surface  ...
+++ 3dcopy: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+
+*********** Warning *************
+Dataset centers are 50.197932 mm
+apart. If registration fails, or if
+parts of the original anatomy gets
+cropped, try adding option 
+   -init_xform AUTO_CENTER 
+to your @auto_tlrc command.
+
+*********************************
+
+Padding ...
+++ 3dZeropad: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ output dataset: ./__ats_tmp__ref_MNI_caez_N27_40pad+tlrc.BRIK
+Resampling ...
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+Clipping -0.000100 854.000100 ...
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___rs_NS+tlrc.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp__resamp_NN+tlrc.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp__resamp_edge_art+tlrc.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+Registration (linear final interpolation) ...
+++ 3dWarpDrive: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+RMS[0] = 87.1103 52.8718   ITER = 8/137
+87.1103
+
+Warping has converged.
+
+++ 3dcopy: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 7.037957 degrees from plumb.
+*+ WARNING: Deoblique datasets with 3dWarp before proceeding with other transformations
+Applying brain mask
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 3drename: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ THD_rename_dataset_files: rename __ats_tmp___pad40_NS+orig.HEAD -> __ats_tmp___pad40_NS.skl+orig.HEAD
+++ THD_rename_dataset_files: rename __ats_tmp___pad40_NS+orig.BRIK.gz -> __ats_tmp___pad40_NS.skl+orig.BRIK.gz
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+Unpadding ...
+++ 3dZeropad: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ output dataset: ./__ats_tmp___upad40_NS+orig.BRIK
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___upad40_NS+orig
+*+ WARNING: Changing the space of an ORIG view dataset may cause confusion!
+*+ WARNING:  NIFTI copies will be interpreted as TLRC view (not TLRC space).
+*+ WARNING:  Consider changing the view of the dataset to TLRC view also
+++ 3drefit processed 1 datasets
+Changing view of transformed anatomy
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___upad40_NS+orig.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+Setting parent with 3drefit -wset NS+orig __ats_tmp___upad40_NS+tlrc
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset __ats_tmp___upad40_NS+tlrc
+++ 3drefit processed 1 datasets
+++ 3drename: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Warning: ignoring +tlrc on new_prefix.
+++ THD_rename_dataset_files: rename __ats_tmp___upad40_NS+tlrc.HEAD -> NS+tlrc.HEAD
+++ THD_rename_dataset_files: rename __ats_tmp___upad40_NS+tlrc.BRIK.gz -> NS+tlrc.BRIK.gz
+Doing the MSB thing...
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 7.037957 degrees from plumb.
+*+ WARNING: Deoblique datasets with 3dWarp before proceeding with other transformations
+Applying brain mask
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3dWarp: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ 3drename: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ THD_rename_dataset_files: rename NS.Xat.rigid+orig.HEAD -> NS.Xat.rigid.skl+orig.HEAD
+++ THD_rename_dataset_files: rename NS.Xat.rigid+orig.BRIK.gz -> NS.Xat.rigid.skl+orig.BRIK.gz
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: A cast of thousands
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset NS.Xat.rigid+orig
+*+ WARNING: Changing the space of an ORIG view dataset may cause confusion!
+*+ WARNING:  NIFTI copies will be interpreted as TLRC view (not TLRC space).
+*+ WARNING:  Consider changing the view of the dataset to TLRC view also
+++ 3drefit processed 1 datasets
+Changing view of rigid_equiv anatomy
+++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Authored by: RW Cox
+++ Processing AFNI dataset NS.Xat.rigid+orig.HEAD
+ + Changed dataset view type and filenames.
+++ 3drefit processed 1 datasets
+Cleanup ...
+++ 3dcopy: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ 3dZcutup: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ Output dataset ./ppp_100.nii.gz
+++ 3dOverlap: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+++ 3dOverlap: AFNI version=AFNI_2011_12_21_1014 (Oct 18 2013) [64-bit]
+./segmentation_elderly.sh: line 78: cd: script_directory: No such file or directory

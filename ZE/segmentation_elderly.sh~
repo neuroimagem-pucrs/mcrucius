@@ -1,0 +1,83 @@
+#!/bin/bash
+
+study=CAT
+subjs=(001 002 003 004 005 006 007 008 009 010 011 012 013 014 015 016 017 018 019 020)
+visits=(visit1)
+# numero do corte
+index=(100)
+script_directory =`pwd`
+
+for subj in ${subjs[*]} ; do
+	for visit in ${visits[*]} ; do
+#		mkdir ~/DATA/MCRUCIUS/$study$subj/$visit/projeto_ze
+		cd ~/DATA/MCRUCIUS/$study$subj/$visit/ANAT
+#		cp $study$subj.ANAT.nii.gz ../projeto_ze
+		cd ../projeto_ze
+		
+		
+
+#		if [ ! -f ./NS+orig.HEAD ]; then
+#			3dSkullStrip -input $study$subj.ANAT.nii.gz 	\
+#		     		     -no_touchup 			\
+#		     		     -shrink_fac_bot_lim 0.65 		\
+#		     		     -use_skull				\
+#		     		     -perc_int 0.1			\
+#		     		     -no_pushout			\
+#		     		     -orig_vol				\
+#		     		     -avoid_vent -avoid_vent		\
+#		     		     -init_radius 75			\
+#				     -ld 30				\
+#		     		     -prefix NS
+#		else
+#			echo "Arquivo Skullstrip ja existe."
+#		fi
+
+#		3dcopy NS+orig 3dskullstrip_$study$subj.nii.gz
+
+#		if [ ! -f ./NS+tlrc.HEAD ]; then
+#			@auto_tlrc			\
+#			-base MNI_caez_N27+tlrc 	\
+#			-input NS+orig 			\
+#			-no_ss 				\
+#			-ok_notice 			\
+#			-rigid_equiv
+			#3dmerge -1noneg -1clip 10 -prefix NS -overwrite NS+tlrc.HEAD
+#		else
+#			echo "Arquivo TLRC ja existe."
+#		fi
+#		3dcopy NS.Xat.rigid+tlrc aligned_$study$subj.nii.gz
+#		rm NS* skull* $study$subj.ANAT.nii.gz
+
+		##########
+  		#RIA/Corte
+  		##########
+  		#Reorientação do alingned para RIA
+#  		3dresample -orient RIA -inset aligned_$study$subj.nii.gz -prefix ${study}${subj}_RIA.nii.gz
+  		#Corte 2D
+#  		3dZcutup -keep ${index[0]} ${index[0]} -prefix ppp_${index[0]}.nii.gz ${study}${subj}_RIA.nii.gz
+  		#Reorientação do corte 2D para RAI
+#  		3dresample -orient RAI -inset ppp_${index[0]}.nii.gz -prefix ppp_${index[0]}_RAI.nii.gz
+  		#Limpando
+#  		rm ppp_${index[0]}.nii.gz
+#  		rm ${study}${subj}_RIA.nii.gz
+
+		#Calcula voxels no corte
+#  		echo Voxels slice: ${index[0]} >> stat_proporcao.1D
+  		x=`3dOverlap ppp_${index[0]}_RAI.nii.gz`
+  		echo $x >> ~/DATA/MCRUCIUS/SCRIPTS/ZE/voxels_no_corte.1D
+  
+  		#Calcula voxels no volume
+#  		echo Voxels volume: ${index[0]} >> stat_proporcao.1D 
+  		y=`3dOverlap aligned_${study}${subj}.nii.gz`
+  		echo $y >> ~/DATA/MCRUCIUS/SCRIPTS/ZE/voxels_no_volume.1D
+  
+  		#Calcula a proporçao
+#  		echo Proporcao: >> stat_proporcao.1D
+#  		ccalc -d -eval $x/$y >> stat_proporcao.1D
+  
+  
+  		#Gera bloco no notas só com valores da proporçao
+  		ccalc -d -eval $x/$y >> ~/DATA/MCRUCIUS/SCRIPTS/ZE/stat_proporcao.1D
+	done
+done
+

@@ -1,0 +1,27 @@
+#!/bin/bash
+
+study=CAT
+subjs=(031)
+visits=(visit1 visit2)
+project_dir=~/DATA/MCRUCIUS
+file=~/neuro-scripts/rodrigo.kreutz/dados.txt
+
+for subj in ${subjs[*]}; do
+	for visit in ${visits[*]}; do
+		cd $project_dir
+		cp MNI_caez_N27+tlrc.* $project_dir/$study$subj/$visit/PROC.RST/
+
+		cd $project_dir/$study$subj/$visit/PROC.RST
+		./@ss_review_basic
+		#./@ss_review_driver
+		#./@epi_review.$study$subj
+		echo "Cheque visualmente os dados e feche o AFNI."
+		afni
+		echo ""
+		echo ""
+		echo ""
+		echo "Anote as informacoes e pressione enter."
+		echo $study$subj - $visit
+		read -n 1 -s
+	done
+done
